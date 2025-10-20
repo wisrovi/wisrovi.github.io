@@ -1,19 +1,41 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisrovi Legacy - Web RPG</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Contenedor para la escena 3D -->
+    <div id="game-container"></div>
 
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
+    <!-- Elementos de la Interfaz de Usuario (UI) -->
+    <div id="ui-container">
+        <div id="mission-tracker"></div>
+        <div id="resource-display"></div>
+        <div id="interaction-prompt"></div>
+        <div id="dialogue-box" class="hidden"></div>
+        <div id="inventory-panel" class="hidden"></div>
+        <div id="market-panel" class="hidden"></div>
+        <!-- Nuevo panel de ayuda -->
+        <div id="help-panel" class="hidden"></div>
+        <!-- Notificación para mensajes del sistema -->
+        <div id="game-notification" class="hidden"></div>
+        <!-- Mostrar nombre del jugador -->
+        <div id="player-name-display"></div>
+    </div>
 
+    <!-- Importar Three.js (usando tipo module para importaciones ES6) -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/+esm"
+            }
+        }
+    </script>
+
+    <!-- Importar el script principal del juego -->
+    <script type="module" src="js/main.js"></script>
 </body>
-</html> 
+</html>

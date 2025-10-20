@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Evita barras de scroll */
+    background-color: #1a1a2e; /* Fondo oscuro tech */
+    color: #e0e0e0; /* Texto claro por defecto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#ui-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite clicks a través de la UI al juego */
+    z-index: 2; /* UI encima del juego */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos básicos para elementos UI (se refinarán) */
+#mission-tracker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0ff;
+    color: #0ff; /* Neón azul */
+    pointer-events: auto;
+}
+
+#resource-display {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f0f; /* Neón púrpura */
+    color: #f0f;
+    pointer-events: auto;
+}
+
+#interaction-prompt {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.1em;
+    display: none; /* Oculto por defecto */
+    pointer-events: auto;
+}
+
+/* Clases utilitarias */
+.hidden {
+    display: none !important;
+}
+
+/* Estilos para paneles (Inventario, Mercado, Diálogo) - se añadirán más tarde */
+#dialogue-box, #inventory-panel, #market-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(10, 10, 30, 0.9);
+    border: 2px solid #0ff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 80%;
+    pointer-events: auto;
+    z-index: 3; /* Paneles encima de todo */
+}
+

@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "titulo": "Primer panel de logs",
+    "descripcion": "Explora el campus y encuentra el primer panel con logs de wiliutils, una biblioteca esencial para el registro y monitoreo de aplicaciones distribuidas.",
+    "recompensa_gemas": 1,
+    "color_gema": "azul",
+    "recompensa_monedas": 10,
+    "recompensa_xp": 10,
+    "referencia": "https://github.com/wisrovi/wiliutils",
+    "status": "disponible",
+    "pasos": [
+      { "descripcion": "Ve al Campus de Visión Artificial. Busca el edificio con la antena satelital.", "tipo": "info" },
+      { "descripcion": "Encuentra e interactúa con el Panel de Logs de wiliutils. Aprenderás cómo esta biblioteca implementa un sistema de registro distribuido con capacidad para millones de eventos por segundo.", "tipo": "interactuar", "objetoId": "log_panel_1", "zona": "campus_vision" },
+      { "descripcion": "Analiza los patrones de logs mostrados y comprende su estructura JSON optimizada.", "tipo": "info" }
+    ],
+    "contenido_educativo": "Wiliutils es una biblioteca de utilidades para sistemas distribuidos que implementa patrones de registro optimizados para entornos de alta concurrencia. Su sistema de logs permite trazar eventos a través de microservicios con mínima latencia.",
+    "paso_actual": 0
+  },
+  {
+    "id": 2,
+    "titulo": "Chip de configuración de wkafka",
+    "descripcion": "Obtén el chip de configuración de un nodo wkafka y llévalo al buzón de la terminal. WKafka es un sistema de mensajería distribuida para aplicaciones de tiempo real.",
+    "recompensa_gemas": 1,
+    "color_gema": "azul",
+    "recompensa_monedas": 20,
+    "recompensa_xp": 20,
+    "referencia": "https://github.com/wisrovi/wkafka",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Dirígete al Taller de Audio Dinámico. Sigue las señales con el símbolo de ondas sonoras.", "tipo": "info" },
+      { "descripcion": "Localiza el servidor de mensajería en la esquina noreste del taller.", "tipo": "info" },
+      { "descripcion": "Recoge el Chip de Configuración WKafka. Este chip contiene los parámetros de particionado y replicación para sistemas de streaming de datos.", "tipo": "recoger", "objetoId": "chip_wkafka_1", "itemId": "chip_wkafka", "zona": "taller_audio" },
+      { "descripcion": "Lleva el chip al Buzón de la Terminal en el Campus. El buzón actualizará automáticamente la configuración del clúster de mensajería.", "tipo": "entregar", "objetoId": "buzon_terminal_1", "requiredItem": "chip_wkafka", "zona": "campus_vision" }
+    ],
+    "contenido_educativo": "WKafka es una implementación optimizada de Apache Kafka, diseñada para procesamiento de streams de datos en tiempo real. Permite la ingesta de terabytes de información con latencias inferiores a 10ms, ideal para aplicaciones IoT y análisis de datos masivos.",
+    "paso_actual": 0
+  },
+  {
+    "id": 3,
+    "titulo": "Mapa de clúster Redis",
+    "descripcion": "Lee el panel del Redis Hub y guarda el plano en tu mochila. Aprenderás sobre la arquitectura de caché distribuida de wredis y su implementación de alta disponibilidad.",
+    "recompensa_gemas": 2,
+    "color_gema": "verde",
+    "recompensa_monedas": 30,
+    "recompensa_xp": 30,
+    "referencia": "https://github.com/wisrovi/wredis",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Viaja al Redis Hub. Busca el edificio con la estructura hexagonal y luces azules.", "tipo": "info" },
+      { "descripcion": "Localiza la sala de control principal con los monitores de estado del clúster.", "tipo": "info" },
+      { "descripcion": "Interactúa con el Panel del Mapa del Clúster. Observa cómo los nodos maestros y esclavos se sincronizan para mantener la integridad de los datos en memoria.", "tipo": "interactuar", "objetoId": "panel_redis_map_1", "zona": "redis_hub" },
+      { "descripcion": "El mapa se ha guardado en tu mochila. Ahora comprendes la topología de nodos y la estrategia de particionado de datos.", "tipo": "info" }
+    ],
+    "contenido_educativo": "WRedis extiende Redis con capacidades avanzadas de clustering y persistencia. Su arquitectura permite escalado horizontal con particionado automático y rebalanceo de datos, manteniendo tiempos de respuesta submilisegundo incluso bajo cargas extremas.",
+    "paso_actual": 0
+  },
+  {
+    "id": 4,
+    "titulo": "Reparar contenedor defectuoso",
+    "descripcion": "Encuentra y reemplaza el módulo dañado de wcontainer en el puerto GPU. Wcontainer es una plataforma de orquestación de contenedores optimizada para cargas de trabajo de IA.",
+    "recompensa_gemas": 2,
+    "color_gema": "verde",
+    "recompensa_monedas": 40,
+    "recompensa_xp": 40,
+    "referencia": "https://github.com/wisrovi/wcontainer",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Ve al Laboratorio de GPU. Sigue las señales con el símbolo de procesamiento paralelo.", "tipo": "info" },
+      { "descripcion": "Localiza el Contenedor Defectuoso. Está emitiendo señales de error en la sección de entrenamiento de modelos.", "tipo": "info" },
+      { "descripcion": "Examina el registro de errores en la terminal adyacente para diagnosticar el problema.", "tipo": "info" },
+      { "descripcion": "Interactúa con el panel para reparar el módulo. El sistema ejecutará una secuencia de reinicio y verificación de integridad del contenedor.", "tipo": "interactuar", "objetoId": "repair_module_1", "zona": "lab_gpu" },
+      { "descripcion": "Observa cómo el orquestador reasigna automáticamente las cargas de trabajo a los nodos disponibles durante la reparación.", "tipo": "info" }
+    ],
+    "contenido_educativo": "Wcontainer es una plataforma de orquestación especializada en cargas de trabajo de IA/ML. Optimiza la asignación de recursos GPU/TPU y gestiona el ciclo de vida completo de los contenedores, desde el despliegue hasta el escalado automático basado en métricas de rendimiento.",
+    "paso_actual": 0
+  },
+  {
+    "id": 5,
+    "titulo": "Decodificar logs de entrenamiento facial",
+    "descripcion": "Revisa el buzón del campus y analiza los logs del sistema de reconocimiento facial. Descubrirás cómo se entrenan los modelos de detección y reconocimiento con técnicas avanzadas de deep learning.",
+    "recompensa_gemas": 3,
+    "color_gema": "roja",
+    "recompensa_monedas": 50,
+    "recompensa_xp": 50,
+    "referencia": "https://github.com/wisrovi/facial_recognition",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Regresa al Campus y revisa el Buzón Digital. Está ubicado cerca de la entrada principal.", "tipo": "info" },
+      { "descripcion": "Interactúa con el Buzón para obtener los logs encriptados. Estos contienen métricas de entrenamiento y matrices de confusión del último modelo entrenado.", "tipo": "interactuar", "objetoId": "buzon_digital_logs_faciales", "zona": "campus_vision" },
+      { "descripcion": "Espera mientras el sistema decodifica los logs usando tu boost de análisis (si lo tienes).", "tipo": "info" },
+      { "descripcion": "Examina los resultados del entrenamiento: precisión 97.8%, recall 96.5%, con 10.000 iteraciones en un conjunto de datos de 1 millón de imágenes.", "tipo": "info" }
+    ],
+    "contenido_educativo": "El sistema de reconocimiento facial de Wisrovi implementa una arquitectura de red neuronal profunda basada en transformers con atención espacial. Utiliza técnicas de data augmentation y aprendizaje por transferencia para maximizar la precisión con conjuntos de datos limitados.",
+    "paso_actual": 0
+  },
+  {
+    "id": 6,
+    "titulo": "Enviar eventos de prueba a wkafka",
+    "descripcion": "Simula un sistema y envía mensajes de prueba a través de wkafka. Aprenderás sobre patrones de publicación-suscripción y procesamiento de streams en tiempo real.",
+    "recompensa_gemas": 3,
+    "color_gema": "roja",
+    "recompensa_monedas": 60,
+    "recompensa_xp": 60,
+    "referencia": "https://github.com/wisrovi/wkafka",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Dirígete a la Torre Kafka. Es el edificio alto con antenas de comunicación en la cima.", "tipo": "info" },
+      { "descripcion": "Encuentra la Terminal de Simulación en el nivel intermedio de la torre.", "tipo": "info" },
+      { "descripcion": "Configura los parámetros de la simulación: 5000 eventos/segundo, 3 particiones, factor de replicación 2.", "tipo": "info" },
+      { "descripcion": "Activa la terminal para enviar los eventos de prueba. Observa los gráficos de latencia y throughput mientras el sistema procesa los mensajes.", "tipo": "interactuar", "objetoId": "terminal_kafka_test_1", "zona": "torre_kafka" },
+      { "descripcion": "Analiza los resultados: 99.999% de mensajes entregados con latencia media de 3.2ms.", "tipo": "info" }
+    ],
+    "contenido_educativo": "WKafka implementa un sistema de mensajería distribuida con garantías de orden y durabilidad. Su arquitectura permite procesar millones de eventos por segundo con tolerancia a fallos y capacidad de reproducción de streams históricos, fundamental para aplicaciones de IoT y análisis en tiempo real.",
+    "paso_actual": 0
+  },
+  {
+    "id": 7,
+    "titulo": "Explorar el entrenamiento del wyoloservice",
+    "descripcion": "Accede a la terminal principal del clúster y visualiza la arquitectura de wyoloservice, un sistema de detección de objetos en tiempo real basado en YOLO (You Only Look Once).",
+    "recompensa_gemas": 4,
+    "color_gema": "violeta",
+    "recompensa_monedas": 70,
+    "recompensa_xp": 70,
+    "referencia": "https://github.com/wisrovi/wyoloservice",
+    "status": "bloqueada",
+    "pasos": [
+      { "descripcion": "Viaja al Centro de Yoloservice. Busca el complejo con cámaras y pantallas de monitoreo.", "tipo": "info" },
+      { "descripcion": "Localiza la Terminal Principal del Clúster en la sala central de operaciones.", "tipo": "info" },
+      { "descripcion": "Examina los diagramas de la arquitectura distribuida en las pantallas adyacentes.", "tipo": "info" },
+      { "descripcion": "Interactúa con la terminal para visualizar la arquitectura. Observa cómo el sistema divide las imágenes en regiones y predice simultáneamente bounding boxes y probabilidades de clase.", "tipo": "interactuar", "objetoId": "terminal_yolo_main_1", "zona": "centro_yoloservice" },
+      { "descripcion": "Revisa las métricas de rendimiento: 45 FPS en GPU T4, mAP de 89.6% en COCO dataset.", "tipo": "info" }
+    ],
+    "contenido_educativo": "WYoloService implementa una versión distribuida y optimizada del algoritmo YOLO para detección de objetos en tiempo real. Utiliza técnicas de cuantización y pruning para reducir la latencia de inferencia, permitiendo su despliegue en dispositivos edge con recursos limitados.",
+    "paso_actual": 0
+   },
+   {
+     "id": 8,
+     "titulo": "Optimizar el entrenamiento con Optuna",
+     "descripcion": "Encuentra el nodo de optimización y activa el controlador de Optuna. Aprenderás sobre técnicas avanzadas de optimización de hiperparámetros para modelos de deep learning.",
+     "recompensa_gemas": 4,
+     "color_gema": "violeta",
+     "recompensa_monedas": 80,
+     "recompensa_xp": 80,
+     "referencia": "https://github.com/wisrovi/wyoloservice",
+     "status": "bloqueada",
+     "pasos": [
+       { "descripcion": "Busca el Nodo de Optimización dentro del Centro Yoloservice. Está en el área de investigación avanzada.", "tipo": "info" },
+       { "descripcion": "Examina los gráficos de búsqueda de hiperparámetros en las pantallas circundantes.", "tipo": "info" },
+       { "descripcion": "Configura los parámetros de búsqueda: 100 trials, algoritmo TPE, 4 trabajos paralelos.", "tipo": "info" },
+       { "descripcion": "Activa el Controlador de Optuna. El sistema comenzará a explorar el espacio de hiperparámetros utilizando búsqueda bayesiana.", "tipo": "interactuar", "objetoId": "controlador_optuna_1", "zona": "centro_yoloservice" },
+       { "descripcion": "Analiza los resultados de la optimización: mejora del 12.3% en mAP con reducción del 8% en tiempo de inferencia.", "tipo": "info" }
+     ],
+     "contenido_educativo": "Optuna es un framework de optimización automática de hiperparámetros que utiliza técnicas bayesianas para explorar eficientemente el espacio de configuraciones. La integración con WYoloService permite encontrar los parámetros óptimos para cada despliegue específico, balanceando precisión y rendimiento.",
+     "paso_actual": 0
+   },
+   {
+     "id": 9,
+     "titulo": "Framework de Machine Learning wml",
+     "descripcion": "Explora el Centro de Datos y descubre wml, un framework completo para machine learning que simplifica el desarrollo de modelos de IA.",
+     "recompensa_gemas": 5,
+     "color_gema": "azul",
+     "recompensa_monedas": 90,
+     "recompensa_xp": 90,
+     "referencia": "https://github.com/wisrovi/wml",
+     "status": "bloqueada",
+     "pasos": [
+       { "descripcion": "Dirígete al Centro de Datos. Es el edificio al sur con estructura de servidores.", "tipo": "info" },
+       { "descripcion": "Localiza el servidor principal de machine learning en el centro del edificio.", "tipo": "info" },
+       { "descripcion": "Interactúa con el Panel de Arquitectura WML. Explora cómo el framework integra preprocesamiento, entrenamiento y deployment en una sola plataforma.", "tipo": "interactuar", "objetoId": "panel_wml_architecture_1", "zona": "canalizaciones_datos" },
+       { "descripcion": "Revisa los ejemplos de código que muestran la simplicidad del API de wml para crear pipelines de ML.", "tipo": "info" }
+     ],
+     "contenido_educativo": "WML es un framework de machine learning desarrollado por Wisrovi Rodriguez que unifica el flujo de trabajo completo de ML: desde la preparación de datos hasta el deployment de modelos. Incluye módulos para computer vision, NLP y aprendizaje profundo con optimizaciones para rendimiento y facilidad de uso.",
+     "paso_actual": 0
+   },
+   {
+     "id": 10,
+     "titulo": "API Framework wapi",
+     "descripcion": "Visita el Mercado y aprende sobre wapi, un framework moderno para construir APIs RESTful con Python.",
+     "recompensa_gemas": 5,
+     "color_gema": "verde",
+     "recompensa_monedas": 100,
+     "recompensa_xp": 100,
+     "referencia": "https://github.com/wisrovi/wapi",
+     "status": "bloqueada",
+     "pasos": [
+       { "descripcion": "Ve al Mercado. Busca el edificio comercial en el suroeste de la ciudad.", "tipo": "info" },
+       { "descripcion": "Encuentra el stand de desarrollo de APIs en la sección de herramientas.", "tipo": "info" },
+       { "descripcion": "Interactúa con la Demo Interactiva de WAPI. Experimenta con la creación de endpoints RESTful y el manejo automático de serialización.", "tipo": "interactuar", "objetoId": "demo_wapi_interactive_1", "zona": "mercado" },
+       { "descripcion": "Observa cómo wapi maneja autenticación, validación y documentación automática de APIs.", "tipo": "info" }
+     ],
+     "contenido_educativo": "WAPI es un framework web moderno para Python que simplifica el desarrollo de APIs RESTful. Incluye características como validación automática de datos, documentación OpenAPI generada dinámicamente, middleware integrado y soporte nativo para async/await, haciendo que el desarrollo de APIs sea más rápido y seguro.",
+     "paso_actual": 0
+   },
+   {
+     "id": 11,
+     "titulo": "Sistema de Monitoreo wmonitor",
+     "descripcion": "Regresa al Centro de Datos y configura wmonitor, un sistema completo de monitoreo y alertas para aplicaciones distribuidas.",
+     "recompensa_gemas": 6,
+     "color_gema": "roja",
+     "recompensa_monedas": 110,
+     "recompensa_xp": 110,
+     "referencia": "https://github.com/wisrovi/wmonitor",
+     "status": "bloqueada",
+     "pasos": [
+       { "descripcion": "Vuelve al Centro de Datos para configurar el sistema de monitoreo.", "tipo": "info" },
+       { "descripcion": "Localiza la sala de control de monitoreo en el ala este del edificio.", "tipo": "info" },
+       { "descripcion": "Configura el Dashboard de WMonitor. Establece métricas de rendimiento, alertas y visualizaciones en tiempo real.", "tipo": "interactuar", "objetoId": "dashboard_wmonitor_1", "zona": "canalizaciones_datos" },
+       { "descripcion": "Observa cómo wmonitor recopila métricas de todos los sistemas distribuidos y genera alertas inteligentes.", "tipo": "info" }
+     ],
+     "contenido_educativo": "WMonitor es una plataforma de monitoreo distribuida que recopila métricas de rendimiento, logs y traces de aplicaciones. Utiliza algoritmos de machine learning para detectar anomalías, predecir fallos y optimizar automáticamente el rendimiento de sistemas distribuidos.",
+     "paso_actual": 0
+   },
+   {
+     "id": 12,
+     "titulo": "Herramienta de Migración wdbmigrate",
+     "descripcion": "En el Mercado, descubre wdbmigrate, una herramienta avanzada para migraciones de bases de datos seguras y versionadas.",
+     "recompensa_gemas": 6,
+     "color_gema": "violeta",
+     "recompensa_monedas": 120,
+     "recompensa_xp": 120,
+     "referencia": "https://github.com/wisrovi/wdbmigrate",
+     "status": "bloqueada",
+     "pasos": [
+       { "descripcion": "Regresa al Mercado para explorar las herramientas de base de datos.", "tipo": "info" },
+       { "descripcion": "Encuentra el área de migraciones de datos en la sección de infraestructura.", "tipo": "info" },
+       { "descripcion": "Ejecuta una Migración de Prueba con WDBMigrate. Observa cómo maneja rollbacks automáticos y validaciones de integridad.", "tipo": "interactuar", "objetoId": "terminal_wdbmigrate_1", "zona": "mercado" },
+       { "descripcion": "Aprende sobre el sistema de versionado y las estrategias de migración seguras implementadas.", "tipo": "info" }
+     ],
+     "contenido_educativo": "WDBMigrate es una herramienta de migración de bases de datos que soporta múltiples motores (PostgreSQL, MySQL, MongoDB) con características avanzadas como rollbacks automáticos, validación de datos, y migraciones condicionales. Garantiza la integridad de datos durante actualizaciones de esquema en entornos de producción.",
+     "paso_actual": 0
+   }
+]
