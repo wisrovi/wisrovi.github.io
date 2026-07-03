@@ -116,42 +116,42 @@
   },
   {
     "id": 7,
-    "titulo": "Explorar el entrenamiento del wyoloservice",
-    "descripcion": "Accede a la terminal principal del clúster y visualiza la arquitectura de wyoloservice, un sistema de detección de objetos en tiempo real basado en YOLO (You Only Look Once).",
+    "titulo": "Ecosistema NeuralForge AI v2.0",
+    "descripcion": "Accede a la terminal del clúster y analiza la nueva arquitectura distribuida v2.0 con FastAPI, Gradio UI y contenedores efímeros Docker para entrenamiento de YOLO.",
     "recompensa_gemas": 4,
     "color_gema": "violeta",
     "recompensa_monedas": 70,
     "recompensa_xp": 70,
-    "referencia": "https://github.com/wisrovi/wyoloservice",
+    "referencia": "https://github.com/wisrovi/train_service2",
     "status": "bloqueada",
     "pasos": [
       { "descripcion": "Viaja al Centro de Yoloservice. Busca el complejo con cámaras y pantallas de monitoreo.", "tipo": "info" },
       { "descripcion": "Localiza la Terminal Principal del Clúster en la sala central de operaciones.", "tipo": "info" },
       { "descripcion": "Examina los diagramas de la arquitectura distribuida en las pantallas adyacentes.", "tipo": "info" },
-      { "descripcion": "Interactúa con la terminal para visualizar la arquitectura. Observa cómo el sistema divide las imágenes en regiones y predice simultáneamente bounding boxes y probabilidades de clase.", "tipo": "interactuar", "objetoId": "terminal_yolo_main_1", "zona": "centro_yoloservice" },
-      { "descripcion": "Revisa las métricas de rendimiento: 45 FPS en GPU T4, mAP de 89.6% en COCO dataset.", "tipo": "info" }
+      { "descripcion": "Interactúa con la terminal para visualizar la arquitectura. Observa cómo el sistema orquesta entrenamientos de YOLOv8 y YOLO11 usando FastAPI y la UI en React.", "tipo": "interactuar", "objetoId": "terminal_yolo_main_1", "zona": "centro_yoloservice" },
+      { "descripcion": "Revisa los registros: el Invoker ejecuta contenedores efímeros con auto_remove habilitado tras entrenar.", "tipo": "info" }
     ],
-    "contenido_educativo": "WYoloService implementa una versión distribuida y optimizada del algoritmo YOLO para detección de objetos en tiempo real. Utiliza técnicas de cuantización y pruning para reducir la latencia de inferencia, permitiendo su despliegue en dispositivos edge con recursos limitados.",
+    "contenido_educativo": "NeuralForge AI (train_service2) v2.0 es un clúster distribuido que orquesta entrenamientos YOLO en contenedores Docker efímeros ('auto-remove') controlados por Celery Workers (Invokers) y una API centralizada en FastAPI con interfaz Gradio/React.",
     "paso_actual": 0
    },
    {
      "id": 8,
-     "titulo": "Optimizar el entrenamiento con Optuna",
-     "descripcion": "Encuentra el nodo de optimización y activa el controlador de Optuna. Aprenderás sobre técnicas avanzadas de optimización de hiperparámetros para modelos de deep learning.",
+     "titulo": "Orquestación con Optuna y Colas de Prioridad",
+     "descripcion": "Configura un estudio distribuido de Optuna y observa cómo se distribuyen las tareas según la prioridad estricta de colas de Redis.",
      "recompensa_gemas": 4,
      "color_gema": "violeta",
      "recompensa_monedas": 80,
      "recompensa_xp": 80,
-     "referencia": "https://github.com/wisrovi/wyoloservice",
+     "referencia": "https://github.com/wisrovi/train_service2",
      "status": "bloqueada",
      "pasos": [
        { "descripcion": "Busca el Nodo de Optimización dentro del Centro Yoloservice. Está en el área de investigación avanzada.", "tipo": "info" },
        { "descripcion": "Examina los gráficos de búsqueda de hiperparámetros en las pantallas circundantes.", "tipo": "info" },
-       { "descripcion": "Configura los parámetros de búsqueda: 100 trials, algoritmo TPE, 4 trabajos paralelos.", "tipo": "info" },
-       { "descripcion": "Activa el Controlador de Optuna. El sistema comenzará a explorar el espacio de hiperparámetros utilizando búsqueda bayesiana.", "tipo": "interactuar", "objetoId": "controlador_optuna_1", "zona": "centro_yoloservice" },
-       { "descripcion": "Analiza los resultados de la optimización: mejora del 12.3% en mAP con reducción del 8% en tiempo de inferencia.", "tipo": "info" }
+       { "descripcion": "Configura la jerarquía de colas para dar prioridad a los nodos GPU dedicados.", "tipo": "info" },
+       { "descripcion": "Activa el Controlador de Optuna. El sistema comenzará a explorar el espacio utilizando la cola de prioridad de Redis (private > high > medium > low).", "tipo": "interactuar", "objetoId": "controlador_optuna_1", "zona": "centro_yoloservice" },
+       { "descripcion": "Analiza los resultados en PostgreSQL: los trials paralelos se sincronizan sin colisiones de base de datos.", "tipo": "info" }
      ],
-     "contenido_educativo": "Optuna es un framework de optimización automática de hiperparámetros que utiliza técnicas bayesianas para explorar eficientemente el espacio de configuraciones. La integración con WYoloService permite encontrar los parámetros óptimos para cada despliegue específico, balanceando precisión y rendimiento.",
+     "contenido_educativo": "En la v2.0 de NeuralForge AI, los entrenamientos se distribuyen mediante Redis usando prioridades estrictas ('private > gpus_high > gpus_medium > gpus_low') y los resultados se almacenan centralizadamente en PostgreSQL, permitiendo a Optuna buscar los hiperparámetros óptimos de forma paralela.",
      "paso_actual": 0
    },
    {
