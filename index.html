@@ -2,46 +2,32 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisrovi Legacy - Web RPG</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wisrovi's Interactive 2D CV & Research Universe</title>
+    <meta name="description" content="Juego RPG 2D Top-Down interactivo que recorre la carrera, la suite de 23 paquetes en PyPI, NeuralForge AI y los 26 preprints doctorales de William Steve Rodriguez Villamizar (wisrovi).">
+    <meta name="author" content="William Steve Rodriguez Villamizar (wisrovi)">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Wisrovi's Interactive 2D CV & Research Universe">
+    <meta property="og:description" content="Explora el campus de investigación 2D, desbloquea habilidades de IA, recolecta gemas y completa las 22 misiones doctorales.">
+    <meta property="og:url" content="https://wisrovi.github.io/">
+
+    <!-- FontAwesome & Google Fonts Orbitron & Inter -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- Contenedor para la escena 3D -->
-    <div id="game-container"></div>
 
-    <!-- Elementos de la Interfaz de Usuario (UI) -->
-    <div id="ui-container">
-        <div id="mission-tracker"></div>
-        <div id="resource-display"></div>
-        <div id="interaction-prompt"></div>
-        <div id="dialogue-box" class="hidden"></div>
-        <div id="inventory-panel" class="hidden"></div>
-        <div id="market-panel" class="hidden"></div>
-        <!-- Nuevo panel de ayuda -->
-        <div id="help-panel" class="hidden"></div>
-        <!-- Notificación para mensajes del sistema -->
-        <div id="game-notification" class="hidden"></div>
-        <!-- Mostrar nombre del jugador y enlaces profesionales -->
-        <div id="player-name-display"></div>
-        <div id="academic-banner">
-            <a href="https://wisrovi.dev" target="_blank" class="hud-link">🌐 wisrovi.dev</a>
-            <a href="https://orcid.org/0009-0005-0710-1861" target="_blank" class="hud-link">🆔 ORCID: 26 Preprints</a>
-            <a href="https://pypi.org/user/wisrovi/" target="_blank" class="hud-link">📦 PyPI Suite</a>
-            <a href="https://github.com/wisrovi/wyoloservice2_production" target="_blank" class="hud-link">⚡ NeuralForge AI</a>
-        </div>
-    </div>
+    <!-- 2D App Container Mount Point -->
+    <div id="root"></div>
 
-    <!-- Importar Three.js (usando tipo module para importaciones ES6) -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/+esm"
-            }
-        }
-    </script>
+    <!-- Main 2D Game Orchestrator Entrypoint (ES Module) -->
+    <script type="module" src="./js/main.js?v=20260912"></script>
 
-    <!-- Importar el script principal del juego -->
-    <script type="module" src="js/main.js"></script>
 </body>
 </html>
+
