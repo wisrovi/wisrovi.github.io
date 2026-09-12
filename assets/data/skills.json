@@ -1,0 +1,178 @@
+[
+  {
+    "id": "dsp_filtering",
+    "name": "Filtro DSP Antiruido",
+    "icon": "fa-wave-square",
+    "color": "#38bdf8",
+    "description": "Mejora la precisión de los sensores y aumenta la velocidad base del vehículo en +10%.",
+    "buff": { "speedMultiplier": 1.10 }
+  },
+  {
+    "id": "audio_augment",
+    "name": "Resonancia Espectral (ProcessAudio)",
+    "icon": "fa-music",
+    "color": "#06b6d4",
+    "description": "Emite ondas de pulso que duplican el radio de detección de monedas y gemas.",
+    "buff": { "radarMultiplier": 1.25 }
+  },
+  {
+    "id": "gil_bypass",
+    "name": "Bypass de GIL (WPipe Core)",
+    "icon": "fa-sun",
+    "color": "#f59e0b",
+    "description": "Desbloquea el turbo de CPU: la aceleración del vehículo aumenta un 25%.",
+    "buff": { "accelerationMultiplier": 1.25 }
+  },
+  {
+    "id": "kafka_streamer",
+    "name": "Particionado Masivo (WKafka)",
+    "icon": "fa-stream",
+    "color": "#f97316",
+    "description": "Permite recolectar flujos continuos de eventos, multiplicando las recompensas de monedas en +20%.",
+    "buff": { "coinMultiplier": 1.20 }
+  },
+  {
+    "id": "atomic_locks",
+    "name": "Candado Atómico (WRedis)",
+    "icon": "fa-lock",
+    "color": "#ef4444",
+    "description": "Protege el estado del vehículo, reduciendo el frenado y la fricción por derrape.",
+    "buff": { "driftControl": 1.20 }
+  },
+  {
+    "id": "tablesync_orm",
+    "name": "TableSync Reactivo (WSqlite/WPostgres)",
+    "icon": "fa-database",
+    "color": "#10b981",
+    "description": "Optimiza la memoria y duplica la capacidad del inventario (bolsa de mano).",
+    "buff": { "capacityBonus": 20 }
+  },
+  {
+    "id": "zero_trust_guard",
+    "name": "Criptografía Zero Trust (WAuth/WFabric)",
+    "icon": "fa-shield-halved",
+    "color": "#8b5cf6",
+    "description": "Cifra la sesión y otorga invulnerabilidad temporal al colisionar con obstáculos.",
+    "buff": { "shieldActive": true }
+  },
+  {
+    "id": "mcp_agentic_flow",
+    "name": "Agente Autónomo FastMCP",
+    "icon": "fa-robot",
+    "color": "#a855f7",
+    "description": "Un dron agéntico satélite acompaña a tu vehículo recolectando gemas cercanas automáticamente.",
+    "buff": { "autoLoot": true }
+  },
+  {
+    "id": "cluster_orchestrator",
+    "name": "Prioridad Celery GPU (NeuralForge)",
+    "icon": "fa-microchip",
+    "color": "#eab308",
+    "description": "Otorga acceso a la cola prioritaria de GPU: velocidad máxima +30%.",
+    "buff": { "speedMultiplier": 1.30 }
+  },
+  {
+    "id": "optuna_tpe_tuning",
+    "name": "Afinación Bayesiana TPESampler",
+    "icon": "fa-dna",
+    "color": "#ec4899",
+    "description": "Calcula trayectorias óptimas aumentando la ganancia de experiencia (XP) en +35%.",
+    "buff": { "xpMultiplier": 1.35 }
+  },
+  {
+    "id": "forensic_xai_audit",
+    "name": "Visión Grad-CAM Multiescala",
+    "icon": "fa-eye",
+    "color": "#14b8a6",
+    "description": "Ilumina zonas y misiones en el minimapa con mapas de calor de alta fidelidad.",
+    "buff": { "minimapEnhanced": true }
+  },
+  {
+    "id": "causal_saliency_math",
+    "name": "Causal Saliency Regularization (PHD-03)",
+    "icon": "fa-brain",
+    "color": "#bef264",
+    "description": "Penaliza distracciones no causales: el vehículo ignora colisiones leves con bordes de carretera.",
+    "buff": { "obstaclePenetration": true }
+  },
+  {
+    "id": "formal_ltl_verification",
+    "name": "Verificación Formal LTL (PHD-02)",
+    "icon": "fa-compass-drafting",
+    "color": "#60a5fa",
+    "description": "Garantía matemática de vivacidad y ausencia de bloqueos: reseteo instantáneo de posición.",
+    "buff": { "instantRecovery": true }
+  },
+  {
+    "id": "container_governor",
+    "name": "Gobernador VRAM (WContainer)",
+    "icon": "fa-boxes-stacked",
+    "color": "#10b981",
+    "description": "Limita el consumo de recursos e incrementa la velocidad de recolección de gemas en +20%.",
+    "buff": { "gemSpeedMultiplier": 1.20 }
+  },
+  {
+    "id": "deep_learning_mastery",
+    "name": "Maestría en Deep Learning (VIU)",
+    "icon": "fa-graduation-cap",
+    "color": "#a855f7",
+    "description": "Graduación oficial en IA: duplica la tasa de ganancia de XP al completar misiones.",
+    "buff": { "xpMultiplier": 1.50 }
+  },
+  {
+    "id": "yolo_optimizer",
+    "name": "Optimizador YOLO (WYOLO)",
+    "icon": "fa-crosshairs",
+    "color": "#f97316",
+    "description": "Aceleración de inferencia y aumento de velocidad máxima del vehículo en +25%.",
+    "buff": { "speedMultiplier": 1.25 }
+  },
+  {
+    "id": "invoker_guardian",
+    "name": "Centinela Invoker (GPU Guard)",
+    "icon": "fa-shield-cat",
+    "color": "#eab308",
+    "description": "Protege los motores contra recalentamiento, reduciendo la desaceleración a cero.",
+    "buff": { "heatControl": true }
+  },
+  {
+    "id": "xai_fidelity_metric",
+    "name": "Métrica Deletion/Insertion AUC",
+    "icon": "fa-chart-line",
+    "color": "#06b6d4",
+    "description": "Mide fidelidad de explicaciones: revela la ubicación de todas las gemas ocultas en el radar.",
+    "buff": { "radarGemsReveal": true }
+  },
+  {
+    "id": "adversarial_shield",
+    "name": "Defensa Adversaria FGSM",
+    "icon": "fa-shield",
+    "color": "#ef4444",
+    "description": "Escudo de inmunidad contra perturbaciones y ruidos de sensor en el terreno.",
+    "buff": { "noiseImmunity": true }
+  },
+  {
+    "id": "domain_shift_predictor",
+    "name": "Oráculo Domain Shift vía FID",
+    "icon": "fa-satellite",
+    "color": "#8b5cf6",
+    "description": "Predice el rendimiento latente: incrementa en +40% el radio de atracción magnética.",
+    "buff": { "radarMultiplier": 1.40 }
+  },
+  {
+    "id": "self_healing_core",
+    "name": "Núcleo Self-Healing (PHD-01)",
+    "icon": "fa-heart-pulse",
+    "color": "#ec4899",
+    "description": "Auto-reparación autónoma en caso de impacto con obstáculos o fallos en el clúster.",
+    "buff": { "autoRepair": true }
+  },
+  {
+    "id": "conformal_doctorate_mastery",
+    "name": "Corona Doctoral Zenodo (PHD Laureate)",
+    "icon": "fa-crown",
+    "color": "#fbbf24",
+    "description": "Aura dorada permanente con todas las estadísticas maximizadas y reconocimiento en el campus virtual.",
+    "buff": { "masteryAura": true, "allStatsBoost": 1.5 }
+  }
+]
