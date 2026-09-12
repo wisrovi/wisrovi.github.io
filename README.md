@@ -4,7 +4,7 @@
   <a href="https://wisrovi.github.io"><img src="https://img.shields.io/badge/Live_Game-Play_Now-00f0ff?style=for-the-badge&logo=three.js&logoColor=black" alt="Live Game" /></a>
   <a href="https://orcid.org/0009-0005-0710-1861"><img src="https://img.shields.io/badge/ORCID-0009--0005--0710--1861-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Portal-wisrovi.dev-111827?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portal" /></a>
-  <a href="https://pypi.org/user/wisrovi/"><img src="https://img.shields.io/badge/PyPI-26+_Packages-3775A9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI" /></a>
+  <a href="https://pypi.org/user/wisrovi/"><img src="https://img.shields.io/badge/PyPI-23_Packages-3775A9?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI" /></a>
   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
@@ -51,5 +51,5 @@ Instead of a traditional static resume, **Wisrovi Legacy** represents an interac
 * **Author**: William Steve Rodriguez Villamizar (wisrovi)
 * **Role**: Principal AI Engineer & Applied AI Solutions Architect | Scientific Researcher
 * **Publications**: 26 scientific preprints with official CERN Zenodo DOIs | [ORCID: 0009-0005-0710-1861](https://orcid.org/0009-0005-0710-1861)
-* **Open Source Suite**: 26+ Python packages published on [PyPI](https://pypi.org/user/wisrovi/)
+* **Open Source Suite**: 23 official Python packages published on [PyPI](https://pypi.org/user/wisrovi/) (Binary Universe architecture with 6 FastMCP servers)
 * **Portfolio**: [wisrovi.dev](https://wisrovi.dev) | [LinkedIn](https://linkedin.com/in/wisrovi-rodriguez)
