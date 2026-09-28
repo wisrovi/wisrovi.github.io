@@ -1,33 +1,2870 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Wisrovi's Interactive 2D CV & Research Universe</title>
-    <meta name="description" content="Juego RPG 2D Top-Down interactivo que recorre la carrera, la suite de 23 paquetes en PyPI, NeuralForge AI y los 26 preprints doctorales de William Steve Rodriguez Villamizar (wisrovi).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisrovi Ecosystem Hub | 200+ Enterprise Repositories & Modules</title>
+    
+    <!-- Meta & SEO -->
+    <meta name="description" content="Central Hub for the Wisrovi Binary Universe: 200+ production repositories, MLOps platforms, FastMCP agents, and Python libraries.">
     <meta name="author" content="William Steve Rodriguez Villamizar (wisrovi)">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Wisrovi's Interactive 2D CV & Research Universe">
-    <meta property="og:description" content="Explora el campus de investigación 2D, desbloquea habilidades de IA, recolecta gemas y completa las 22 misiones doctorales.">
-    <meta property="og:url" content="https://wisrovi.github.io/">
-
-    <!-- FontAwesome & Google Fonts Orbitron & Inter -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #00f2fe;
+            --primary-glow: rgba(0, 242, 254, 0.4);
+            --secondary: #4facfe;
+            --bg-deep: #020617;
+            --bg-card: rgba(15, 23, 42, 0.7);
+            --bg-card-hover: rgba(30, 41, 59, 0.95);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --text-muted: #64748b;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(0, 242, 254, 0.35);
+            --gradient-linear: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            --gradient-mesh: radial-gradient(at 0% 0%, hsla(180, 100%, 50%, 0.15) 0, transparent 50%), 
+                             radial-gradient(at 100% 100%, hsla(210, 100%, 50%, 0.15) 0, transparent 50%);
+            --shadow-neo: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+            --shadow-glow: 0 0 30px var(--primary-glow);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --container-max: 1400px;
+        }
 
-    <link rel="stylesheet" href="./css/style.css">
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: var(--gradient-mesh);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 2rem; }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1.25rem 0;
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; font-size: 1.4rem; font-weight: 800; text-decoration: none; color: var(--text-main); }
+        .logo i { background: var(--gradient-linear); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-dim); font-weight: 600; font-size: 0.95rem; transition: var(--transition); }
+        .nav-links a:hover { color: var(--primary); }
+        .btn-nav { background: var(--gradient-linear); color: var(--bg-deep) !important; padding: 0.5rem 1.25rem; border-radius: 50px; font-weight: 700; }
+
+        /* Hero */
+        .hero { padding: 160px 0 60px; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 242, 254, 0.1); border: 1px solid var(--border-highlight); padding: 0.5rem 1.25rem; border-radius: 100px; color: var(--primary); font-weight: 700; font-size: 0.85rem; margin-bottom: 1.5rem; text-transform: uppercase; }
+        .hero h1 { font-size: clamp(3rem, 7vw, 5rem); margin-bottom: 1.5rem; letter-spacing: -0.04em; }
+        .gradient-text { background: var(--gradient-linear); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 850px; margin: 0 auto 3rem; }
+
+        /* Search & Filter Bar */
+        .search-box {
+            max-width: 700px;
+            margin: 0 auto 4rem;
+            position: relative;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            color: var(--text-main);
+            font-size: 1.1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+        .search-box input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 25px var(--primary-glow);
+        }
+        .search-box i {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        /* Grid */
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+        .repo-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .repo-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-highlight);
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow-neo);
+        }
+        .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+        .repo-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(0, 242, 254, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.35rem;
+        }
+        .repo-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50px;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            text-transform: uppercase;
+        }
+        .repo-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+        .repo-card p {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 1.75rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .repo-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+        .stars { color: var(--text-muted); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; gap: 0.35rem; }
+        .stars i { color: #f59e0b; }
+        .repo-actions { display: flex; gap: 0.5rem; }
+        .btn-sm {
+            padding: 0.4rem 0.85rem;
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid var(--border-highlight);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .btn-sm:hover {
+            background: var(--primary);
+            color: var(--bg-deep);
+        }
+        .btn-gh {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-dim);
+            border-color: var(--border);
+        }
+        .btn-gh:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 30px;
+            border-top: 1px solid var(--border);
+            background: rgba(15, 23, 42, 0.9);
+            text-align: center;
+        }
+        .footer-brand p { color: var(--text-dim); margin-top: 0.5rem; }
+    </style>
 </head>
 <body>
 
-    <!-- 2D App Container Mount Point -->
-    <div id="root"></div>
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i class="fas fa-cubes"></i> Wisrovi Hub
+            </a>
+            <div class="nav-links">
+                <a href="https://wisrovi.dev" target="_blank">Portfolio</a>
+                <a href="https://github.com/wisrovi" target="_blank">GitHub Profile</a>
+                <a href="https://www.linkedin.com/in/wisrovi-rodriguez/" target="_blank">LinkedIn</a>
+                <a href="https://wisrovi.dev" target="_blank" class="btn-nav">wisrovi.dev</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Main 2D Game Orchestrator Entrypoint (ES Module) -->
-    <script type="module" src="./js/main.js?v=20260912"></script>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">
+                <i class="fas fa-network-wired"></i> Binary Universe Matrix
+            </div>
+            <h1>The Complete <span class="gradient-text">Wisrovi Suite</span></h1>
+            <p>Unified catalog of 200+ specialized repositories, open-source libraries, MLOps platforms, and formal verification frameworks architected by William Steve Rodriguez Villamizar.</p>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search across all 200+ repositories, tools, and platforms..." onkeyup="filterRepos()">
+            </div>
+            
+            <div class="repos-grid" id="reposGrid">
+                
+    <div class="repo-card" data-name="03mair---algoritmos-de-optimizacion---2019" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>03MAIR---Algoritmos-de-Optimizacion---2019</h3>
+        <p>Official repository for 03MAIR---Algoritmos-de-Optimizacion---2019 by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/03MAIR---Algoritmos-de-Optimizacion---2019/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03MAIR---Algoritmos-de-Optimizacion---2019" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03mair-algoritmos-de-optimizacion" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>03MAIR-Algoritmos-de-Optimizacion</h3>
+        <p>Algoritmos de optimización 2020</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/03MAIR-Algoritmos-de-Optimizacion/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03MAIR-Algoritmos-de-Optimizacion" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="analyze-code-quality" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>analyze-code-quality</h3>
+        <p>Official repository for analyze-code-quality by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/analyze-code-quality/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/analyze-code-quality" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="api_face_recognition" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>API_face_recognition</h3>
+        <p>API reconocimiento facial con JWT</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/API_face_recognition/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/API_face_recognition" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="appscanner_uniongr" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>AppScanner_Uniongr</h3>
+        <p>Official repository for AppScanner_Uniongr by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/AppScanner_Uniongr/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/AppScanner_Uniongr" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="aws_clasificadorcatsdogs" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>AWS_clasificadorCatsDogs</h3>
+        <p>clase diplomado 21/09/2021</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/AWS_clasificadorCatsDogs/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/AWS_clasificadorCatsDogs" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="aws_dia_17nov" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>AWS_DIA_17NOV</h3>
+        <p>implantacion una RNA en AWS</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/AWS_DIA_17NOV/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/AWS_DIA_17NOV" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="chat_kafka_android" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-stream"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>chat_kafka_android</h3>
+        <p>Official repository for chat_kafka_android by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/chat_kafka_android/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/chat_kafka_android" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="chat_telegram_gpt3" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-comments"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>chat_telegram_gpt3</h3>
+        <p>Official repository for chat_telegram_gpt3 by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/chat_telegram_gpt3/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/chat_telegram_gpt3" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="clasificacion_gatos_perros" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>clasificacion_gatos_perros</h3>
+        <p>mi proyecto de IA en una api con docker</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/clasificacion_gatos_perros/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/clasificacion_gatos_perros" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="classesmd5-64" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>classesMD5-64</h3>
+        <p>Extract classes.dex from apk and returns base64 MD5 raw encoded</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/classesMD5-64/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/classesMD5-64" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="community-bookstore" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>community-bookstore</h3>
+        <p>Community Bookstore to exchange and donate books</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/community-bookstore/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/community-bookstore" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="configubuntu20.04" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>configUbuntu20.04</h3>
+        <p>Official repository for configUbuntu20.04 by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/configUbuntu20.04/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/configUbuntu20.04" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="covert_letter_generator" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>covert_letter_generator</h3>
+        <p>Official repository for covert_letter_generator by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/covert_letter_generator/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/covert_letter_generator" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="cv-game" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>cv-game</h3>
+        <p>Mi cv interactivo</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/cv-game/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/cv-game" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="cv-game-v1.1" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>cv-game-v1.1</h3>
+        <p>cv-game</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/cv-game-v1.1/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/cv-game-v1.1" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="deblur-gan" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>deblur-gan</h3>
+        <p>Keras implementation of "DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks"</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/deblur-gan/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/deblur-gan" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="deteccion-objetos-video" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>deteccion-objetos-video</h3>
+        <p>Deteccion de objetos sobre video usando PyTorch </p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/deteccion-objetos-video/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/deteccion-objetos-video" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="django-authentication" data-lang="css">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="repo-badge">CSS</div>
+        </div>
+        <h3>django-authentication</h3>
+        <p>This is Django Login Register App</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/django-authentication/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/django-authentication" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="docusaurus" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>docusaurus</h3>
+        <p>Easy to maintain open source documentation websites.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/docusaurus/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/docusaurus" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="entorno_desarrollo_java" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>entorno_desarrollo_java</h3>
+        <p>entorno de desarrollo de java web apache tomcat en docker</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/entorno_desarrollo_java/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/entorno_desarrollo_java" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="entrenarportransferlearning" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>entrenarPorTransferLearning</h3>
+        <p>Official repository for entrenarPorTransferLearning by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/entrenarPorTransferLearning/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/entrenarPorTransferLearning" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="face_recognition" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>face_recognition</h3>
+        <p>The world's simplest facial recognition api for Python and the command line</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/face_recognition/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/face_recognition" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="fastapi" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>fastapi</h3>
+        <p>Official repository for fastapi by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/fastapi/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/fastapi" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="first-order-model" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>first-order-model</h3>
+        <p>This repository contains the source code for the paper First Order Motion Model for Image Animation </p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/first-order-model/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/first-order-model" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="fossflow" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>FossFLOW</h3>
+        <p>Make beautiful isometric infrastructure diagrams</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/FossFLOW/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/FossFLOW" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="genetic_algorithm" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>genetic_algorithm</h3>
+        <p>Algoritmo genetico</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/genetic_algorithm/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/genetic_algorithm" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="genetic_algoritm_joaquin_amat_rodrigo" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>genetic_algoritm_joaquin_amat_rodrigo</h3>
+        <p>algoritmos geneticos</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/genetic_algoritm_joaquin_amat_rodrigo/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/genetic_algoritm_joaquin_amat_rodrigo" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="glicocare" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>GlicoCare</h3>
+        <p>O GlicoCare é um sistema de telemonitoramento domiciliar para a atenção especializada de pessoas acometidas por diabetes mellitus.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/GlicoCare/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/GlicoCare" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="gpu-api" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>gpu-api</h3>
+        <p>Official repository for gpu-api by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/gpu-api/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/gpu-api" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="gui_python_tkinter" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>gui_python_tkinter</h3>
+        <p>Official repository for gui_python_tkinter by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/gui_python_tkinter/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/gui_python_tkinter" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="handmouse" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>HandMouse</h3>
+        <p>A simple script using mediapipe to move your mouse using your webcam.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/HandMouse/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/HandMouse" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="heinsohn" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>heinsohn</h3>
+        <p>test_ingreso</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/heinsohn/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/heinsohn" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="imagenesdocker" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>imagenesDocker</h3>
+        <p>Official repository for imagenesDocker by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/imagenesDocker/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/imagenesDocker" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="jupyter_pt" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>jupyter_pt</h3>
+        <p>Official repository for jupyter_pt by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/jupyter_pt/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/jupyter_pt" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="librarysqlite" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>LibrarySqLite</h3>
+        <p>libreria Android para usar las funciones de base de datos en el celular.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/LibrarySqLite/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/LibrarySqLite" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="libreria-java-enviar-email" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>Libreria-Java-enviar-Email</h3>
+        <p>Official repository for Libreria-Java-enviar-Email by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/Libreria-Java-enviar-Email/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Libreria-Java-enviar-Email" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="libreria-java-hacer-grafica-con-primefaces" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>Libreria-Java-Hacer-Grafica-con-Primefaces</h3>
+        <p>Official repository for Libreria-Java-Hacer-Grafica-con-Primefaces by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/Libreria-Java-Hacer-Grafica-con-Primefaces/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Libreria-Java-Hacer-Grafica-con-Primefaces" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="matplotlib" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>matplotlib</h3>
+        <p>matplotlib: plotting with Python</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/matplotlib/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/matplotlib" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="mi_primer_app_ia" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>mi_primer_app_IA</h3>
+        <p>Official repository for mi_primer_app_IA by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/mi_primer_app_IA/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/mi_primer_app_IA" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="mlops-with-docker-and-jenkins-master" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>MLOps-with-Docker-and-Jenkins-master</h3>
+        <p>Official repository for MLOps-with-Docker-and-Jenkins-master by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/MLOps-with-Docker-and-Jenkins-master/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/MLOps-with-Docker-and-Jenkins-master" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="neuralforgeai" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>NeuralForgeAI</h3>
+        <p>Interfaz central para train service</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/NeuralForgeAI/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/NeuralForgeAI" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="nexusflow" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>NexusFlow</h3>
+        <p>Organizador tareas para proyectos, enfocado en SUD</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/NexusFlow/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/NexusFlow" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="nlp-basic" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>NLP-basic</h3>
+        <p>Official repository for NLP-basic by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/NLP-basic/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/NLP-basic" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="notificationserviceandroid" data-lang="java">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Java</div>
+        </div>
+        <h3>NotificationServiceAndroid</h3>
+        <p>Notification Service For Android</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/NotificationServiceAndroid/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/NotificationServiceAndroid" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ocr" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>OCR</h3>
+        <p>Official repository for OCR by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/OCR/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/OCR" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ollama-webui-docker" data-lang="shell">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">Shell</div>
+        </div>
+        <h3>ollama-webui-docker</h3>
+        <p>Ollama Docker Compose Setup with WebUI and Remote Access via Cloudflare</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/ollama-webui-docker/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/ollama-webui-docker" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="opencv" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>OpenCV</h3>
+        <p>Hand Detection and Finger Counting + Sudoku Solver.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/OpenCV/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/OpenCV" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="open_alpr_api" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>open_alpr_api</h3>
+        <p>Official repository for open_alpr_api by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/open_alpr_api/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/open_alpr_api" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="parejas_jugadores_nba" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>parejas_jugadores_nba</h3>
+        <p>Official repository for parejas_jugadores_nba by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/parejas_jugadores_nba/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/parejas_jugadores_nba" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="password_generator_api" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>Password_generator_api</h3>
+        <p>Official repository for Password_generator_api by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/Password_generator_api/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Password_generator_api" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="portfolio-wisrovi" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>portfolio-wisrovi</h3>
+        <p><p align="center">   <strong>Interactive Research & Engineering Portfolio of William Steve Rodriguez Villamizar</strong><br>   Principal Sof...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/portfolio-wisrovi/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/portfolio-wisrovi" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="posenet-pytorch" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>posenet-pytorch</h3>
+        <p>A PyTorch port of Google TensorFlow.js PoseNet (Real-time Human Pose Estimation)</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/posenet-pytorch/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/posenet-pytorch" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="posenetv2-pythontf" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>posenetv2-pythontf</h3>
+        <p>This is a Python and Tensorflow implementation of Posenet v2 released by Google in TensorflowJS.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/posenetv2-pythontf/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/posenetv2-pythontf" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="prediccion_de_acciones_en_la_bolsa_con_redes_lstm" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM</h3>
+        <p>Official repository for Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="prueba-tecnica-django" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>Prueba-tecnica-django</h3>
+        <p>Official repository for Prueba-tecnica-django by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/Prueba-tecnica-django/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Prueba-tecnica-django" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="pulsesensorplayground" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>PulseSensorPlayground</h3>
+        <p>A PulseSensor library (for Arduino) that collects our most popular projects in one place. </p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/PulseSensorPlayground/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/PulseSensorPlayground" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="pyspart_probe" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>pyspart_probe</h3>
+        <p>Official repository for pyspart_probe by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/pyspart_probe/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/pyspart_probe" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="python-chatbot" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-comments"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>python-chatbot</h3>
+        <p>python-chatbot</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/python-chatbot/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/python-chatbot" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="redesneuronales" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>RedesNeuronales</h3>
+        <p>Official repository for RedesNeuronales by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/RedesNeuronales/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/RedesNeuronales" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="servicio-para-notificaciones-telegram-e-email-con-python" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>Servicio-para-notificaciones-Telegram-e-Email-con-python</h3>
+        <p>servicio que se puede utilizar para enviar notificaciones por Telegram (ya creado el bot) y enviar un Email</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/Servicio-para-notificaciones-Telegram-e-Email-con-python/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/Servicio-para-notificaciones-Telegram-e-Email-con-python" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ssh-docker" data-lang="dockerfile">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">Dockerfile</div>
+        </div>
+        <h3>ssh-docker</h3>
+        <p>Official repository for ssh-docker by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/ssh-docker/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/ssh-docker" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="status_machine" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>status_machine</h3>
+        <p>Official repository for status_machine by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/status_machine/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/status_machine" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="template_devops" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>template_DevOps</h3>
+        <p>Official repository for template_DevOps by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/template_DevOps/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/template_DevOps" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="tfm" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>TFM</h3>
+        <p>Official repository for TFM by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/TFM/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/TFM" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="tfm2022" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>TFM2022</h3>
+        <p>tfm2022.duckdns.org:10110/</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 2</span>
+            <div class="repo-actions">
+                <a href="repos/TFM2022/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/TFM2022" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ticketflow" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-comments"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>TicketFlow</h3>
+        <p>Gestor de tickets internos</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/TicketFlow/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/TicketFlow" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="to-do-app" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>to-do-app</h3>
+        <p>fix of https://github.com/Ram-95/to_do_app</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/to-do-app/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/to-do-app" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="traffic-light-semaforo" data-lang="css">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">CSS</div>
+        </div>
+        <h3>traffic-light-semaforo</h3>
+        <p>Codigo de: Simulador de semáforo con HTML-CSS-JAVASCRIPT </p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/traffic-light-semaforo/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/traffic-light-semaforo" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="travis-test-arduino" data-lang="c++">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">C++</div>
+        </div>
+        <h3>travis-test-arduino</h3>
+        <p>Test Project to do Travis-CI for Arduino sketch.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/travis-test-arduino/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/travis-test-arduino" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ubuntu-gui" data-lang="dockerfile">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Dockerfile</div>
+        </div>
+        <h3>ubuntu-gui</h3>
+        <p>Official repository for ubuntu-gui by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/ubuntu-gui/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/ubuntu-gui" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="visualizacion-cajamar" data-lang="jupyter notebook">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Jupyter Notebook</div>
+        </div>
+        <h3>visualizacion-cajamar</h3>
+        <p>Official repository for visualizacion-cajamar by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/visualizacion-cajamar/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/visualizacion-cajamar" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="w-cli" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>w-cli</h3>
+        <p><p align="center">   <a href="https://pypi.org/user/wisrovi/"><img src="https://img.shields.io/badge/PyPI-23_Published_Packages-3775A9?style...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/w-cli/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/w-cli" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wagents" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wAgents</h3>
+        <p>Official repository for wAgents by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wAgents/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wAgents" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wauth" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wauth</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wauth/"><img src="https://img.shields.io/pypi/v/wauth?style=for-the-badge&logo=pypi&c...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wauth/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wauth" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wbase_lib" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wbase_lib</h3>
+        <p>Official repository for wbase_lib by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 2</span>
+            <div class="repo-actions">
+                <a href="repos/wbase_lib/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wbase_lib" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wclickhouse" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wclickhouse</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wclickhouse/"><img src="https://img.shields.io/pypi/v/wclickhouse?style=for-the-badge...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wclickhouse/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wclickhouse" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wcontainer" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wcontainer</h3>
+        <p>Official repository for wcontainer by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wcontainer/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wcontainer" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wdatabase-vscode" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>wdatabase-vscode</h3>
+        <p><p align="center">   <a href="https://open-vsx.org/extension/wisrovi/wdatabase-vscode"><img src="https://img.shields.io/badge/Open%20VSX-v2....</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wdatabase-vscode/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wdatabase-vscode" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wdatabricks" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wdatabricks</h3>
+        <p>Official repository for wdatabricks by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wdatabricks/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wdatabricks" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wdecorators" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wdecorators</h3>
+        <p>Official repository for wdecorators by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wdecorators/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wdecorators" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wdvc" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wDVC</h3>
+        <p>Official repository for wDVC by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wDVC/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wDVC" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wdvc-mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wDVC-mcp</h3>
+        <p>Official repository for wDVC-mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wDVC-mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wDVC-mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="webapppython" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>WebAppPython</h3>
+        <p>Website developed with python</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/WebAppPython/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/WebAppPython" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="welasticsearch" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wElasticsearch</h3>
+        <p>Official repository for wElasticsearch by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wElasticsearch/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wElasticsearch" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wfabricsecurity" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wFabricSecurity</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wFabricSecurity/"><img src="https://img.shields.io/pypi/v/wFabricSecurity?style=for-t...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wFabricSecurity/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wFabricSecurity" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="whaproxy" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>whaproxy</h3>
+        <p>Official repository for whaproxy by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/whaproxy/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/whaproxy" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wimage" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wimage</h3>
+        <p>Official repository for wimage by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wimage/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wimage" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wisrovi" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wisrovi</h3>
+        <p><!-- Header Section --> <p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/Link...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wisrovi/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wisrovi" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wisrovi-python" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wisrovi-python</h3>
+        <p>**Un ecosistema académico y profesional de nivel universitario y de ingeniería, concebido para guiarte de forma rigurosa, práctica e inmersi...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wisrovi-python/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wisrovi-python" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wisrovi.github.io" data-lang="javascript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">JavaScript</div>
+        </div>
+        <h3>wisrovi.github.io</h3>
+        <p><p align="center">   <a href="https://wisrovi.github.io"><img src="https://img.shields.io/badge/Live_Game-Play_Now-00f0ff?style=for-the-badg...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wisrovi.github.io/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wisrovi.github.io" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wkafka" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-stream"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>wkafka</h3>
+        <p>controlador de kafka</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 2</span>
+            <div class="repo-actions">
+                <a href="repos/wkafka/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wkafka" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wkafka_mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-stream"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wkafka_mcp</h3>
+        <p>Official repository for wkafka_mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wkafka_mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wkafka_mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wmariadb" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wmariadb</h3>
+        <p>Official repository for wmariadb by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wmariadb/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wmariadb" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wmessenger" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wmessenger</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wconnect/"><img src="https://img.shields.io/pypi/v/wconnect?style=for-the-badge&logo=...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wmessenger/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wmessenger" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wmongo" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wmongo</h3>
+        <p>Official repository for wmongo by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wmongo/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wmongo" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wmysql" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wmysql</h3>
+        <p>Official repository for wmysql by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wmysql/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wmysql" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wnats" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wnats</h3>
+        <p>Official repository for wnats by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wnats/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wnats" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpipe" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpipe</h3>
+        <p>La clase `Pipeline` es una herramienta que facilita la ejecución de un pipeline de tareas y la interacción con una API externa. La librería ...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 3</span>
+            <div class="repo-actions">
+                <a href="repos/wpipe/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpipe" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpipe-api" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpipe-api</h3>
+        <p>api para wpipe</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wpipe-api/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpipe-api" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpipe-mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpipe-mcp</h3>
+        <p><p align="center">   <a href="https://github.com/wisrovi/wpipe-mcp"><img src="https://img.shields.io/badge/MCP-1.0-orange.svg?style=for-the-...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wpipe-mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpipe-mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpipe-plugins" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpipe-plugins</h3>
+        <p><p align="center">   <a href="https://github.com/wisrovi/wpipe-plugins"><img src="https://img.shields.io/badge/wpipe--plugins-v1.5.3-blue.sv...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wpipe-plugins/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpipe-plugins" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpipe-steps" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpipe-steps</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wpipe-steps/"><img src="https://img.shields.io/pypi/v/wpipe-steps?style=for-the-badge...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wpipe-steps/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpipe-steps" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpostgresql" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpostgresql</h3>
+        <p>Official repository for wpostgresql by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wpostgresql/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpostgresql" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wpostgresql-mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wpostgresql-mcp</h3>
+        <p>Official repository for wpostgresql-mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wpostgresql-mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wpostgresql-mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wredis" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-bolt"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wredis</h3>
+        <p>**WRedis v1.0.0 LTS** — Production-ready Python library for Redis with real async/await, cache decorators, high availability, and comprehens...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wredis/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wredis" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wredis_mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-bolt"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wredis_mcp</h3>
+        <p>Official repository for wredis_mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wredis_mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wredis_mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wsnowflake" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wSnowflake</h3>
+        <p>Official repository for wSnowflake by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wSnowflake/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wSnowflake" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wsqlite" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wsqlite</h3>
+        <p><p align="center">   <a href="https://pypi.org/project/wsqlite/"><img src="https://img.shields.io/pypi/v/wsqlite?style=for-the-badge&logo=py...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 2</span>
+            <div class="repo-actions">
+                <a href="repos/wsqlite/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wsqlite" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wsqlite_mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wsqlite_mcp</h3>
+        <p>Official repository for wsqlite_mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wsqlite_mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wsqlite_mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wticket" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-comments"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>wticket</h3>
+        <p>> A modern, scalable ticket management system engineered with vanilla JavaScript and JSONBin.io, designed for zero-infrastructure deployment...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 2</span>
+            <div class="repo-actions">
+                <a href="repos/wticket/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wticket" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wtinydb" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wtinydb</h3>
+        <p>Official repository for wtinydb by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wtinydb/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wtinydb" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wtinydb-mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wtinydb-mcp</h3>
+        <p>Official repository for wtinydb-mcp by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wtinydb-mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wtinydb-mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wutils" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wutils</h3>
+        <p>Official repository for wutils by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wutils/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wutils" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wwonka" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wWonka</h3>
+        <p>Official repository for wWonka by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wWonka/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wWonka" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyolo" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyolo</h3>
+        <p>Official repository for wyolo by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wyolo/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyolo" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice</h3>
+        <p>Official repository for wyoloservice by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_control_server" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_control_server</h3>
+        <p>This repository contains the **base infrastructure services** (Redis Broker, PostgreSQL Database) and a backup **Gradio monitoring UI** for ...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_control_server/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_control_server" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_data_prep" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_data_prep</h3>
+        <p>Official repository for wyoloservice2_data_prep by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_data_prep/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_data_prep" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_extension" data-lang="typescript">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">TypeScript</div>
+        </div>
+        <h3>wyoloservice2_extension</h3>
+        <p>Official repository for wyoloservice2_extension by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_extension/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_extension" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_invoker" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>wyoloservice2_invoker</h3>
+        <p>> The Celery-based worker node that manages GPU allocation and Samba dataset mounting.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_invoker/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_invoker" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_manager" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_manager</h3>
+        <p>> The genetic algorithm brain powered by Optuna for hyperparameter evolution.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_manager/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_manager" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_mcp" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_mcp</h3>
+        <p>An advanced, state-of-the-art **Model Context Protocol (MCP)** server that empowers AI agents to seamlessly interact with the NeuralForgeAI ...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_mcp/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_mcp" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_production" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_production</h3>
+        <p>!Version !Status !Docker</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_production/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_production" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_worker" data-lang="html">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">HTML</div>
+        </div>
+        <h3>wyoloservice2_worker</h3>
+        <p>This component is the high-performance **ephemeral execution container** where the actual training of YOLO models (classification, detection...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_worker/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_worker" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wzeromq" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wzeroMQ</h3>
+        <p>Official repository for wzeroMQ by William Steve Rodriguez Villamizar (wisrovi).</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wzeroMQ/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wzeroMQ" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="youtube-video-finder" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>YouTube-video-finder</h3>
+        <p>A tool to intentionally discover valuable videos</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 0</span>
+            <div class="repo-actions">
+                <a href="repos/YouTube-video-finder/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/YouTube-video-finder" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wyoloservice2_paper" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wyoloservice2_paper</h3>
+        <p>Welcome to the official research and academic repository for the **NeuralForgeAI (train_service2)** ecosystem.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wyoloservice2_paper/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wyoloservice2_paper" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="wisrovi_ecosystem_hub" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>wisrovi_ecosystem_hub</h3>
+        <p>Enterprise-grade implementation and architecture for wisrovi_ecosystem_hub.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/wisrovi_ecosystem_hub/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/wisrovi_ecosystem_hub" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="w_libraries" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>w_libraries</h3>
+        <p>Enterprise-grade implementation and architecture for w_libraries.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/w_libraries/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/w_libraries" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="train_service_2" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>train_service_2</h3>
+        <p>Enterprise-grade implementation and architecture for train_service_2.</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/train_service_2/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/train_service_2" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final</h3>
+        <p>> **Construcción de Soluciones Reales: Full-Stack Web con FastAPI + Streamlit, Chatbot Inteligente y BD SQL ACID**   > **Nivel:** Nivel 4 (I...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-05-integracion-agente-ia" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-05-integracion-agente-ia</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-05-integracion-agente-ia/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-05-integracion-agente-ia" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-03-persistencia-sql-transacciones" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-database"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-03-persistencia-sql-transacciones</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-03-persistencia-sql-transacciones/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-03-persistencia-sql-transacciones" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-07-docker-y-compose" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fab fa-docker"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-07-docker-y-compose</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-07-docker-y-compose/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-07-docker-y-compose" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-04-frontend-streamlit" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-04-frontend-streamlit</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-04-frontend-streamlit/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-04-frontend-streamlit" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-08-despliegue-cicd-portafolio" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-08-despliegue-cicd-portafolio</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-08-despliegue-cicd-portafolio/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-08-despliegue-cicd-portafolio" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-02-backend-fastapi" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-02-backend-fastapi</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-02-backend-fastapi/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-02-backend-fastapi" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-06-testing-y-calidad" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-06-testing-y-calidad</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-06-testing-y-calidad/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-06-testing-y-calidad" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="04-proyecto-final_clase-01-arquitectura-y-planificacion" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>04-proyecto-final_clase-01-arquitectura-y-planificacion</h3>
+        <p>**Curso 4: Taller Práctico & Proyecto Final Integrador** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 4 - Integrador` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/04-proyecto-final_clase-01-arquitectura-y-planificacion/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/04-proyecto-final_clase-01-arquitectura-y-planificacion" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia</h3>
+        <p>> **Modelos LLM, Inferencia, Tool Calling, Memoria Vectorial, RAG, Arquitecturas ReAct y Multi-Agentes**   > **Nivel:** Nivel 3 (Avanzado) &...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-05-embeddings-y-bases-vectoriales" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-05-embeddings-y-bases-vectoriales</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-05-embeddings-y-bases-vectoriales/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-05-embeddings-y-bases-vectoriales" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-01-fundamentos-llm-tokenizacion" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-01-fundamentos-llm-tokenizacion</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-01-fundamentos-llm-tokenizacion/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-01-fundamentos-llm-tokenizacion" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-02-prompt-engineering-avanzado" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-02-prompt-engineering-avanzado</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-02-prompt-engineering-avanzado/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-02-prompt-engineering-avanzado" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-04-tool-calling-funciones" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-04-tool-calling-funciones</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-04-tool-calling-funciones/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-04-tool-calling-funciones" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-06-arquitecturas-rag" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-06-arquitecturas-rag</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-06-arquitecturas-rag/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-06-arquitecturas-rag" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-07-agentes-autonomos-react" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-07-agentes-autonomos-react</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-07-agentes-autonomos-react/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-07-agentes-autonomos-react" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-08-sistemas-multi-agente" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-08-sistemas-multi-agente</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-08-sistemas-multi-agente/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-08-sistemas-multi-agente" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="03-agentes-ia_clase-03-salidas-estructuradas-pydantic" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>03-agentes-ia_clase-03-salidas-estructuradas-pydantic</h3>
+        <p>**Curso 3: Creación y Desarrollo de Agentes de IA** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Metáfora Central:* **...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/03-agentes-ia_clase-03-salidas-estructuradas-pydantic/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/03-agentes-ia_clase-03-salidas-estructuradas-pydantic" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras</h3>
+        <p>> **Optimización de Memoria, Notación Big-O, Pilas, Colas, Búsqueda Binaria, Grafos y Programación Dinámica**   > **Nivel:** Nivel 2 (Interm...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-04-algoritmos-busqueda" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-04-algoritmos-busqueda</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-04-algoritmos-busqueda/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-04-algoritmos-busqueda" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-07-grafos-y-recorridos" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-07-grafos-y-recorridos</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-07-grafos-y-recorridos/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-07-grafos-y-recorridos" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-03-tablas-hash-y-sets" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-03-tablas-hash-y-sets</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-03-tablas-hash-y-sets/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-03-tablas-hash-y-sets" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="02-algoritmos-estructuras_clase-02-pilas-y-colas" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>02-algoritmos-estructuras_clase-02-pilas-y-colas</h3>
+        <p>**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Metáfora Centr...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/02-algoritmos-estructuras_clase-02-pilas-y-colas/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/02-algoritmos-estructuras_clase-02-pilas-y-colas" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python</h3>
+        <p>> **De Cero a Programador: Los 4 Pilares Lógicos, Colecciones y Proyecto CLI**   > **Nivel:** Nivel 1 (100% Principiantes Absolutos) &bull; ...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-04-control-flujo-bucles" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-04-control-flujo-bucles</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Bucl...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-04-control-flujo-bucles/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-04-control-flujo-bucles" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-05-listas-y-colecciones" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-05-listas-y-colecciones</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«List...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-05-listas-y-colecciones/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-05-listas-y-colecciones" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-03-control-flujo-condicionales" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-03-control-flujo-condicionales</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Cond...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-03-control-flujo-condicionales/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-03-control-flujo-condicionales" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-01-panorama-general" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-01-panorama-general</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«El M...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-01-panorama-general/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-01-panorama-general" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-07-funciones" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-07-funciones</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Func...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-07-funciones/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-07-funciones" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-08-proyecto-integrador-basico" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-08-proyecto-integrador-basico</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Cons...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-08-proyecto-integrador-basico/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-08-proyecto-integrador-basico" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-06-diccionarios" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-06-diccionarios</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Dicc...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-06-diccionarios/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-06-diccionarios" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="01-fundamentos-python_clase-02-variables-y-tipos" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-brain"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>01-fundamentos-python_clase-02-variables-y-tipos</h3>
+        <p>**Curso 1: Fundamentos Básicos de Python** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 1 - Principiante` &bull; *Metáfora Central:* **«Vari...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/01-fundamentos-python_clase-02-variables-y-tipos/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/01-fundamentos-python_clase-02-variables-y-tipos" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="ui-ux-pro-max-skill" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>ui-ux-pro-max-skill</h3>
+        <p><p align="center">   <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.vi.md">🇻🇳 Tiếng Việt</a> |   <a href=...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/ui-ux-pro-max-skill/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/ui-ux-pro-max-skill" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="archify" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>archify</h3>
+        <p><p align="center">   <strong>English</strong> · <a href="./README_ZH.md">简体中文</a> </p></p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/archify/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/archify" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="superpowers" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>superpowers</h3>
+        <p>Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initi...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/superpowers/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/superpowers" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="impeccable" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>impeccable</h3>
+        <p>Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 59 deterministic detector rules for AI-generated fro...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/impeccable/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/impeccable" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="andrej-karpathy-skills" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>andrej-karpathy-skills</h3>
+        <p>> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills. > > Follow me on X...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/andrej-karpathy-skills/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/andrej-karpathy-skills" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="repo-card" data-name="graphify" data-lang="python">
+        <div class="repo-header">
+            <div class="repo-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="repo-badge">Python</div>
+        </div>
+        <h3>graphify</h3>
+        <p><p align="center">   <a href="https://graphify.com"><img src="https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/logo.png" wid...</p>
+        <div class="repo-footer">
+            <span class="stars"><i class="fas fa-star"></i> 1</span>
+            <div class="repo-actions">
+                <a href="repos/graphify/index.html" class="btn-sm"><i class="fas fa-eye"></i> Portal</a>
+                <a href="https://github.com/wisrovi/graphify" target="_blank" class="btn-sm btn-gh"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <h3>Wisrovi Distributed Architecture</h3>
+            <p style="color: var(--text-muted); margin-top: 0.5rem;">&copy; 2024-2026 William Steve Rodriguez Villamizar (wisrovi). All systems certified for production.</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterRepos() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.repo-card');
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                const desc = card.querySelector('p').innerText.toLowerCase();
+                if (name.includes(input) || desc.includes(input)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
-

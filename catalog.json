@@ -1,0 +1,1559 @@
+[
+  {
+    "name": "03MAIR---Algoritmos-de-Optimizacion---2019",
+    "desc": "Official repository for 03MAIR---Algoritmos-de-Optimizacion---2019 by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/03MAIR---Algoritmos-de-Optimizacion---2019",
+    "page": "repos/03MAIR---Algoritmos-de-Optimizacion---2019/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "03MAIR-Algoritmos-de-Optimizacion",
+    "desc": "Algoritmos de optimizaci\u00f3n 2020",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/03MAIR-Algoritmos-de-Optimizacion",
+    "page": "repos/03MAIR-Algoritmos-de-Optimizacion/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "analyze-code-quality",
+    "desc": "Official repository for analyze-code-quality by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/analyze-code-quality",
+    "page": "repos/analyze-code-quality/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "API_face_recognition",
+    "desc": "API reconocimiento facial con JWT",
+    "stars": 1,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/API_face_recognition",
+    "page": "repos/API_face_recognition/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "AppScanner_Uniongr",
+    "desc": "Official repository for AppScanner_Uniongr by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/AppScanner_Uniongr",
+    "page": "repos/AppScanner_Uniongr/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "AWS_clasificadorCatsDogs",
+    "desc": "clase diplomado 21/09/2021",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/AWS_clasificadorCatsDogs",
+    "page": "repos/AWS_clasificadorCatsDogs/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "AWS_DIA_17NOV",
+    "desc": "implantacion una RNA en AWS",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/AWS_DIA_17NOV",
+    "page": "repos/AWS_DIA_17NOV/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "chat_kafka_android",
+    "desc": "Official repository for chat_kafka_android by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/chat_kafka_android",
+    "page": "repos/chat_kafka_android/index.html",
+    "icon": "fas fa-stream"
+  },
+  {
+    "name": "chat_telegram_gpt3",
+    "desc": "Official repository for chat_telegram_gpt3 by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/chat_telegram_gpt3",
+    "page": "repos/chat_telegram_gpt3/index.html",
+    "icon": "fas fa-comments"
+  },
+  {
+    "name": "clasificacion_gatos_perros",
+    "desc": "mi proyecto de IA en una api con docker",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/clasificacion_gatos_perros",
+    "page": "repos/clasificacion_gatos_perros/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "classesMD5-64",
+    "desc": "Extract classes.dex from apk and returns base64 MD5 raw encoded",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/classesMD5-64",
+    "page": "repos/classesMD5-64/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "community-bookstore",
+    "desc": "Community Bookstore to exchange and donate books",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/community-bookstore",
+    "page": "repos/community-bookstore/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "configUbuntu20.04",
+    "desc": "Official repository for configUbuntu20.04 by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/configUbuntu20.04",
+    "page": "repos/configUbuntu20.04/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "covert_letter_generator",
+    "desc": "Official repository for covert_letter_generator by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/covert_letter_generator",
+    "page": "repos/covert_letter_generator/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "cv-game",
+    "desc": "Mi cv interactivo",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/cv-game",
+    "page": "repos/cv-game/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "cv-game-v1.1",
+    "desc": "cv-game",
+    "stars": 1,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/cv-game-v1.1",
+    "page": "repos/cv-game-v1.1/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "deblur-gan",
+    "desc": "Keras implementation of \"DeblurGAN: Blind Motion Deblurring Using Conditional Adversarial Networks\"",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/deblur-gan",
+    "page": "repos/deblur-gan/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "deteccion-objetos-video",
+    "desc": "Deteccion de objetos sobre video usando PyTorch ",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/deteccion-objetos-video",
+    "page": "repos/deteccion-objetos-video/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "django-authentication",
+    "desc": "This is Django Login Register App",
+    "stars": 0,
+    "lang": "CSS",
+    "url": "https://github.com/wisrovi/django-authentication",
+    "page": "repos/django-authentication/index.html",
+    "icon": "fas fa-shield-alt"
+  },
+  {
+    "name": "docusaurus",
+    "desc": "Easy to maintain open source documentation websites.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/docusaurus",
+    "page": "repos/docusaurus/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "entorno_desarrollo_java",
+    "desc": "entorno de desarrollo de java web apache tomcat en docker",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/entorno_desarrollo_java",
+    "page": "repos/entorno_desarrollo_java/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "entrenarPorTransferLearning",
+    "desc": "Official repository for entrenarPorTransferLearning by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/entrenarPorTransferLearning",
+    "page": "repos/entrenarPorTransferLearning/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "face_recognition",
+    "desc": "The world's simplest facial recognition api for Python and the command line",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/face_recognition",
+    "page": "repos/face_recognition/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "fastapi",
+    "desc": "Official repository for fastapi by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/fastapi",
+    "page": "repos/fastapi/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "first-order-model",
+    "desc": "This repository contains the source code for the paper First Order Motion Model for Image Animation ",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/first-order-model",
+    "page": "repos/first-order-model/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "FossFLOW",
+    "desc": "Make beautiful isometric infrastructure diagrams",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/FossFLOW",
+    "page": "repos/FossFLOW/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "genetic_algorithm",
+    "desc": "Algoritmo genetico",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/genetic_algorithm",
+    "page": "repos/genetic_algorithm/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "genetic_algoritm_joaquin_amat_rodrigo",
+    "desc": "algoritmos geneticos",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/genetic_algoritm_joaquin_amat_rodrigo",
+    "page": "repos/genetic_algoritm_joaquin_amat_rodrigo/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "GlicoCare",
+    "desc": "O GlicoCare \u00e9 um sistema de telemonitoramento domiciliar para a aten\u00e7\u00e3o especializada de pessoas acometidas por diabetes mellitus.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/GlicoCare",
+    "page": "repos/GlicoCare/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "gpu-api",
+    "desc": "Official repository for gpu-api by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/gpu-api",
+    "page": "repos/gpu-api/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "gui_python_tkinter",
+    "desc": "Official repository for gui_python_tkinter by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/gui_python_tkinter",
+    "page": "repos/gui_python_tkinter/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "HandMouse",
+    "desc": "A simple script using mediapipe to move your mouse using your webcam.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/HandMouse",
+    "page": "repos/HandMouse/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "heinsohn",
+    "desc": "test_ingreso",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/heinsohn",
+    "page": "repos/heinsohn/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "imagenesDocker",
+    "desc": "Official repository for imagenesDocker by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/imagenesDocker",
+    "page": "repos/imagenesDocker/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "jupyter_pt",
+    "desc": "Official repository for jupyter_pt by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/jupyter_pt",
+    "page": "repos/jupyter_pt/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "LibrarySqLite",
+    "desc": "libreria Android para usar las funciones de base de datos en el celular.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/LibrarySqLite",
+    "page": "repos/LibrarySqLite/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "Libreria-Java-enviar-Email",
+    "desc": "Official repository for Libreria-Java-enviar-Email by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/Libreria-Java-enviar-Email",
+    "page": "repos/Libreria-Java-enviar-Email/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "Libreria-Java-Hacer-Grafica-con-Primefaces",
+    "desc": "Official repository for Libreria-Java-Hacer-Grafica-con-Primefaces by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/Libreria-Java-Hacer-Grafica-con-Primefaces",
+    "page": "repos/Libreria-Java-Hacer-Grafica-con-Primefaces/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "matplotlib",
+    "desc": "matplotlib: plotting with Python",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/matplotlib",
+    "page": "repos/matplotlib/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "mi_primer_app_IA",
+    "desc": "Official repository for mi_primer_app_IA by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/mi_primer_app_IA",
+    "page": "repos/mi_primer_app_IA/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "MLOps-with-Docker-and-Jenkins-master",
+    "desc": "Official repository for MLOps-with-Docker-and-Jenkins-master by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/MLOps-with-Docker-and-Jenkins-master",
+    "page": "repos/MLOps-with-Docker-and-Jenkins-master/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "NeuralForgeAI",
+    "desc": "Interfaz central para train service",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/NeuralForgeAI",
+    "page": "repos/NeuralForgeAI/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "NexusFlow",
+    "desc": "Organizador tareas para proyectos, enfocado en SUD",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/NexusFlow",
+    "page": "repos/NexusFlow/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "NLP-basic",
+    "desc": "Official repository for NLP-basic by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/NLP-basic",
+    "page": "repos/NLP-basic/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "NotificationServiceAndroid",
+    "desc": "Notification Service For Android",
+    "stars": 0,
+    "lang": "Java",
+    "url": "https://github.com/wisrovi/NotificationServiceAndroid",
+    "page": "repos/NotificationServiceAndroid/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "OCR",
+    "desc": "Official repository for OCR by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/OCR",
+    "page": "repos/OCR/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "ollama-webui-docker",
+    "desc": "Ollama Docker Compose Setup with WebUI and Remote Access via Cloudflare",
+    "stars": 0,
+    "lang": "Shell",
+    "url": "https://github.com/wisrovi/ollama-webui-docker",
+    "page": "repos/ollama-webui-docker/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "OpenCV",
+    "desc": "Hand Detection and Finger Counting + Sudoku Solver.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/OpenCV",
+    "page": "repos/OpenCV/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "open_alpr_api",
+    "desc": "Official repository for open_alpr_api by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/open_alpr_api",
+    "page": "repos/open_alpr_api/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "parejas_jugadores_nba",
+    "desc": "Official repository for parejas_jugadores_nba by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/parejas_jugadores_nba",
+    "page": "repos/parejas_jugadores_nba/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "Password_generator_api",
+    "desc": "Official repository for Password_generator_api by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/Password_generator_api",
+    "page": "repos/Password_generator_api/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "portfolio-wisrovi",
+    "desc": "<p align=\"center\">   <strong>Interactive Research & Engineering Portfolio of William Steve Rodriguez Villamizar</strong><br>   Principal Software Engineer, AI Solutions Architect & Ph.D. Fellowship Candidate.<br>   <em>Bridging Formal Verification (LTL), Explainable Computer Vision (XAI), and Enterp...",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/portfolio-wisrovi",
+    "page": "repos/portfolio-wisrovi/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "posenet-pytorch",
+    "desc": "A PyTorch port of Google TensorFlow.js PoseNet (Real-time Human Pose Estimation)",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/posenet-pytorch",
+    "page": "repos/posenet-pytorch/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "posenetv2-pythontf",
+    "desc": "This is a Python and Tensorflow implementation of Posenet v2 released by Google in TensorflowJS.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/posenetv2-pythontf",
+    "page": "repos/posenetv2-pythontf/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM",
+    "desc": "Official repository for Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM",
+    "page": "repos/Prediccion_de_acciones_en_la_bolsa_con_redes_LSTM/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "Prueba-tecnica-django",
+    "desc": "Official repository for Prueba-tecnica-django by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/Prueba-tecnica-django",
+    "page": "repos/Prueba-tecnica-django/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "PulseSensorPlayground",
+    "desc": "A PulseSensor library (for Arduino) that collects our most popular projects in one place. ",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/PulseSensorPlayground",
+    "page": "repos/PulseSensorPlayground/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "pyspart_probe",
+    "desc": "Official repository for pyspart_probe by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/pyspart_probe",
+    "page": "repos/pyspart_probe/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "python-chatbot",
+    "desc": "python-chatbot",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/python-chatbot",
+    "page": "repos/python-chatbot/index.html",
+    "icon": "fas fa-comments"
+  },
+  {
+    "name": "RedesNeuronales",
+    "desc": "Official repository for RedesNeuronales by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/RedesNeuronales",
+    "page": "repos/RedesNeuronales/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "Servicio-para-notificaciones-Telegram-e-Email-con-python",
+    "desc": "servicio que se puede utilizar para enviar notificaciones por Telegram (ya creado el bot) y enviar un Email",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/Servicio-para-notificaciones-Telegram-e-Email-con-python",
+    "page": "repos/Servicio-para-notificaciones-Telegram-e-Email-con-python/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "ssh-docker",
+    "desc": "Official repository for ssh-docker by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Dockerfile",
+    "url": "https://github.com/wisrovi/ssh-docker",
+    "page": "repos/ssh-docker/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "status_machine",
+    "desc": "Official repository for status_machine by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/status_machine",
+    "page": "repos/status_machine/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "template_DevOps",
+    "desc": "Official repository for template_DevOps by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/template_DevOps",
+    "page": "repos/template_DevOps/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "TFM",
+    "desc": "Official repository for TFM by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/TFM",
+    "page": "repos/TFM/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "TFM2022",
+    "desc": "tfm2022.duckdns.org:10110/",
+    "stars": 2,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/TFM2022",
+    "page": "repos/TFM2022/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "TicketFlow",
+    "desc": "Gestor de tickets internos",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/TicketFlow",
+    "page": "repos/TicketFlow/index.html",
+    "icon": "fas fa-comments"
+  },
+  {
+    "name": "to-do-app",
+    "desc": "fix of https://github.com/Ram-95/to_do_app",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/to-do-app",
+    "page": "repos/to-do-app/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "traffic-light-semaforo",
+    "desc": "Codigo de: Simulador de sem\u00e1foro con HTML-CSS-JAVASCRIPT ",
+    "stars": 0,
+    "lang": "CSS",
+    "url": "https://github.com/wisrovi/traffic-light-semaforo",
+    "page": "repos/traffic-light-semaforo/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "travis-test-arduino",
+    "desc": "Test Project to do Travis-CI for Arduino sketch.",
+    "stars": 0,
+    "lang": "C++",
+    "url": "https://github.com/wisrovi/travis-test-arduino",
+    "page": "repos/travis-test-arduino/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "ubuntu-gui",
+    "desc": "Official repository for ubuntu-gui by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Dockerfile",
+    "url": "https://github.com/wisrovi/ubuntu-gui",
+    "page": "repos/ubuntu-gui/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "visualizacion-cajamar",
+    "desc": "Official repository for visualizacion-cajamar by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Jupyter Notebook",
+    "url": "https://github.com/wisrovi/visualizacion-cajamar",
+    "page": "repos/visualizacion-cajamar/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "w-cli",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/user/wisrovi/\"><img src=\"https://img.shields.io/badge/PyPI-23_Published_Packages-3775A9?style=for-the-badge&logo=pypi&logoColor=white\" alt=\"PyPI Suite\" /></a>   <a href=\"https://orcid.org/0009-0005-0710-1861\"><img src=\"https://img.shields.io/badge/ORCID...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/w-cli",
+    "page": "repos/w-cli/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wAgents",
+    "desc": "Official repository for wAgents by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wAgents",
+    "page": "repos/wAgents/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wauth",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wauth/\"><img src=\"https://img.shields.io/pypi/v/wauth?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://pypi.org/project/wauth/\"><img src=\"https://img.shields.io/pypi/pyversions/wauth.svg?style=for-the-badg...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wauth",
+    "page": "repos/wauth/index.html",
+    "icon": "fas fa-shield-alt"
+  },
+  {
+    "name": "wbase_lib",
+    "desc": "Official repository for wbase_lib by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 2,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wbase_lib",
+    "page": "repos/wbase_lib/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wclickhouse",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wclickhouse/\"><img src=\"https://img.shields.io/pypi/v/wclickhouse?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://pypi.org/project/wclickhouse/\"><img src=\"https://img.shields.io/pypi/pyversions/wclickhous...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wclickhouse",
+    "page": "repos/wclickhouse/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wcontainer",
+    "desc": "Official repository for wcontainer by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wcontainer",
+    "page": "repos/wcontainer/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "wdatabase-vscode",
+    "desc": "<p align=\"center\">   <a href=\"https://open-vsx.org/extension/wisrovi/wdatabase-vscode\"><img src=\"https://img.shields.io/badge/Open%20VSX-v2.0.0-blue?style=for-the-badge&logo=visualstudiocode\" alt=\"Open VSX\" /></a>   <a href=\"https://linkedin.com/in/wisrovi-rodriguez\"><img src=\"https://img.shields.io...",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/wdatabase-vscode",
+    "page": "repos/wdatabase-vscode/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wdatabricks",
+    "desc": "Official repository for wdatabricks by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wdatabricks",
+    "page": "repos/wdatabricks/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wdecorators",
+    "desc": "Official repository for wdecorators by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wdecorators",
+    "page": "repos/wdecorators/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wDVC",
+    "desc": "Official repository for wDVC by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wDVC",
+    "page": "repos/wDVC/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wDVC-mcp",
+    "desc": "Official repository for wDVC-mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wDVC-mcp",
+    "page": "repos/wDVC-mcp/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "WebAppPython",
+    "desc": "Website developed with python",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/WebAppPython",
+    "page": "repos/WebAppPython/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wElasticsearch",
+    "desc": "Official repository for wElasticsearch by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wElasticsearch",
+    "page": "repos/wElasticsearch/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wFabricSecurity",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wFabricSecurity/\"><img src=\"https://img.shields.io/pypi/v/wFabricSecurity?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://linkedin.com/in/wisrovi-rodriguez\"><img src=\"https://img.shields.io/badge/LinkedIn...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wFabricSecurity",
+    "page": "repos/wFabricSecurity/index.html",
+    "icon": "fas fa-shield-alt"
+  },
+  {
+    "name": "whaproxy",
+    "desc": "Official repository for whaproxy by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/whaproxy",
+    "page": "repos/whaproxy/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wimage",
+    "desc": "Official repository for wimage by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wimage",
+    "page": "repos/wimage/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wisrovi",
+    "desc": "<!-- Header Section --> <p align=\"center\">   <a href=\"https://linkedin.com/in/wisrovi-rodriguez\"><img src=\"https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\" /></a>   <a href=\"https://orcid.org/0009-0005-0710-1861\"><img src=\"https://img.shi...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wisrovi",
+    "page": "repos/wisrovi/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wisrovi-python",
+    "desc": "**Un ecosistema acad\u00e9mico y profesional de nivel universitario y de ingenier\u00eda, concebido para guiarte de forma rigurosa, pr\u00e1ctica e inmersiva a lo largo de 4 cursos, 32 clases semanales, 129 ejemplos estructurados, 32 manuales t\u00e9cnicos en PDF, cuadernos interactivos en Google Colab y proyectos real...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wisrovi-python",
+    "page": "repos/wisrovi-python/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wisrovi.github.io",
+    "desc": "<p align=\"center\">   <a href=\"https://wisrovi.github.io\"><img src=\"https://img.shields.io/badge/Live_Game-Play_Now-00f0ff?style=for-the-badge&logo=three.js&logoColor=black\" alt=\"Live Game\" /></a>   <a href=\"https://orcid.org/0009-0005-0710-1861\"><img src=\"https://img.shields.io/badge/ORCID-0009--000...",
+    "stars": 0,
+    "lang": "JavaScript",
+    "url": "https://github.com/wisrovi/wisrovi.github.io",
+    "page": "repos/wisrovi.github.io/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wkafka",
+    "desc": "controlador de kafka",
+    "stars": 2,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/wkafka",
+    "page": "repos/wkafka/index.html",
+    "icon": "fas fa-stream"
+  },
+  {
+    "name": "wkafka_mcp",
+    "desc": "Official repository for wkafka_mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wkafka_mcp",
+    "page": "repos/wkafka_mcp/index.html",
+    "icon": "fas fa-stream"
+  },
+  {
+    "name": "wmariadb",
+    "desc": "Official repository for wmariadb by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wmariadb",
+    "page": "repos/wmariadb/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wmessenger",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wconnect/\"><img src=\"https://img.shields.io/pypi/v/wconnect?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://pypi.org/project/wconnect/\"><img src=\"https://img.shields.io/pypi/pyversions/wconnect.svg?style=...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wmessenger",
+    "page": "repos/wmessenger/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wmongo",
+    "desc": "Official repository for wmongo by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wmongo",
+    "page": "repos/wmongo/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wmysql",
+    "desc": "Official repository for wmysql by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wmysql",
+    "page": "repos/wmysql/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wnats",
+    "desc": "Official repository for wnats by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wnats",
+    "page": "repos/wnats/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wpipe",
+    "desc": "La clase `Pipeline` es una herramienta que facilita la ejecuci\u00f3n de un pipeline de tareas y la interacci\u00f3n con una API externa. La librer\u00eda proporciona la capacidad de registrar workers, procesos y tareas, permitiendo reportar el estado de cada paso en tiempo real.",
+    "stars": 3,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpipe",
+    "page": "repos/wpipe/index.html",
+    "icon": "fas fa-project-diagram"
+  },
+  {
+    "name": "wpipe-api",
+    "desc": "api para wpipe",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpipe-api",
+    "page": "repos/wpipe-api/index.html",
+    "icon": "fas fa-project-diagram"
+  },
+  {
+    "name": "wpipe-mcp",
+    "desc": "<p align=\"center\">   <a href=\"https://github.com/wisrovi/wpipe-mcp\"><img src=\"https://img.shields.io/badge/MCP-1.0-orange.svg?style=for-the-badge&logo=fastmcp&logoColor=white\" alt=\"MCP 1.0\" /></a>   <a href=\"https://linkedin.com/in/wisrovi-rodriguez\"><img src=\"https://img.shields.io/badge/LinkedIn-0...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpipe-mcp",
+    "page": "repos/wpipe-mcp/index.html",
+    "icon": "fas fa-project-diagram"
+  },
+  {
+    "name": "wpipe-plugins",
+    "desc": "<p align=\"center\">   <a href=\"https://github.com/wisrovi/wpipe-plugins\"><img src=\"https://img.shields.io/badge/wpipe--plugins-v1.5.3-blue.svg?style=for-the-badge&logo=python&color=3b82f6\" alt=\"wpipe-plugins\" /></a>   <a href=\"https://linkedin.com/in/wisrovi-rodriguez\"><img src=\"https://img.shields.i...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpipe-plugins",
+    "page": "repos/wpipe-plugins/index.html",
+    "icon": "fas fa-project-diagram"
+  },
+  {
+    "name": "wpipe-steps",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wpipe-steps/\"><img src=\"https://img.shields.io/pypi/v/wpipe-steps?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://pypi.org/project/wpipe-steps/\"><img src=\"https://img.shields.io/pypi/pyversions/wpipe-step...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpipe-steps",
+    "page": "repos/wpipe-steps/index.html",
+    "icon": "fas fa-project-diagram"
+  },
+  {
+    "name": "wpostgresql",
+    "desc": "Official repository for wpostgresql by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpostgresql",
+    "page": "repos/wpostgresql/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wpostgresql-mcp",
+    "desc": "Official repository for wpostgresql-mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wpostgresql-mcp",
+    "page": "repos/wpostgresql-mcp/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wredis",
+    "desc": "**WRedis v1.0.0 LTS** \u2014 Production-ready Python library for Redis with real async/await, cache decorators, high availability, and comprehensive type safety.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wredis",
+    "page": "repos/wredis/index.html",
+    "icon": "fas fa-bolt"
+  },
+  {
+    "name": "wredis_mcp",
+    "desc": "Official repository for wredis_mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wredis_mcp",
+    "page": "repos/wredis_mcp/index.html",
+    "icon": "fas fa-bolt"
+  },
+  {
+    "name": "wSnowflake",
+    "desc": "Official repository for wSnowflake by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wSnowflake",
+    "page": "repos/wSnowflake/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wsqlite",
+    "desc": "<p align=\"center\">   <a href=\"https://pypi.org/project/wsqlite/\"><img src=\"https://img.shields.io/pypi/v/wsqlite?style=for-the-badge&logo=pypi&color=3b82f6\" alt=\"PyPI version\" /></a>   <a href=\"https://pypi.org/project/wsqlite/\"><img src=\"https://img.shields.io/pypi/pyversions/wsqlite.svg?style=for-...",
+    "stars": 2,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wsqlite",
+    "page": "repos/wsqlite/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wsqlite_mcp",
+    "desc": "Official repository for wsqlite_mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wsqlite_mcp",
+    "page": "repos/wsqlite_mcp/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wticket",
+    "desc": "> A modern, scalable ticket management system engineered with vanilla JavaScript and JSONBin.io, designed for zero-infrastructure deployment on static hosting platforms.",
+    "stars": 2,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/wticket",
+    "page": "repos/wticket/index.html",
+    "icon": "fas fa-comments"
+  },
+  {
+    "name": "wtinydb",
+    "desc": "Official repository for wtinydb by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wtinydb",
+    "page": "repos/wtinydb/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wtinydb-mcp",
+    "desc": "Official repository for wtinydb-mcp by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wtinydb-mcp",
+    "page": "repos/wtinydb-mcp/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "wutils",
+    "desc": "Official repository for wutils by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wutils",
+    "page": "repos/wutils/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wWonka",
+    "desc": "Official repository for wWonka by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wWonka",
+    "page": "repos/wWonka/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wyolo",
+    "desc": "Official repository for wyolo by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyolo",
+    "page": "repos/wyolo/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice",
+    "desc": "Official repository for wyoloservice by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice",
+    "page": "repos/wyoloservice/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_control_server",
+    "desc": "This repository contains the **base infrastructure services** (Redis Broker, PostgreSQL Database) and a backup **Gradio monitoring UI** for the NeuralForgeAI training cluster.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_control_server",
+    "page": "repos/wyoloservice2_control_server/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_data_prep",
+    "desc": "Official repository for wyoloservice2_data_prep by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_data_prep",
+    "page": "repos/wyoloservice2_data_prep/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_extension",
+    "desc": "Official repository for wyoloservice2_extension by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 0,
+    "lang": "TypeScript",
+    "url": "https://github.com/wisrovi/wyoloservice2_extension",
+    "page": "repos/wyoloservice2_extension/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_invoker",
+    "desc": "> The Celery-based worker node that manages GPU allocation and Samba dataset mounting.",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/wyoloservice2_invoker",
+    "page": "repos/wyoloservice2_invoker/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_manager",
+    "desc": "> The genetic algorithm brain powered by Optuna for hyperparameter evolution.",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_manager",
+    "page": "repos/wyoloservice2_manager/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_mcp",
+    "desc": "An advanced, state-of-the-art **Model Context Protocol (MCP)** server that empowers AI agents to seamlessly interact with the NeuralForgeAI YOLO training cluster, remote Samba datasets, and distributed worker nodes. Designed and architected by William Rodriguez (Wisrovi), this MCP bridges the gap be...",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_mcp",
+    "page": "repos/wyoloservice2_mcp/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_production",
+    "desc": "!Version !Status !Docker",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_production",
+    "page": "repos/wyoloservice2_production/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wyoloservice2_worker",
+    "desc": "This component is the high-performance **ephemeral execution container** where the actual training of YOLO models (classification, detection, and segmentation) is performed. It is launched dynamically by the Invoker, processes configurations through the `wpipe` pipeline engine, and reports results t...",
+    "stars": 0,
+    "lang": "HTML",
+    "url": "https://github.com/wisrovi/wyoloservice2_worker",
+    "page": "repos/wyoloservice2_worker/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wzeroMQ",
+    "desc": "Official repository for wzeroMQ by William Steve Rodriguez Villamizar (wisrovi).",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wzeroMQ",
+    "page": "repos/wzeroMQ/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "YouTube-video-finder",
+    "desc": "A tool to intentionally discover valuable videos",
+    "stars": 0,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/YouTube-video-finder",
+    "page": "repos/YouTube-video-finder/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "wyoloservice2_paper",
+    "desc": "Welcome to the official research and academic repository for the **NeuralForgeAI (train_service2)** ecosystem.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wyoloservice2_paper",
+    "page": "repos/wyoloservice2_paper/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "wisrovi_ecosystem_hub",
+    "desc": "Enterprise-grade implementation and architecture for wisrovi_ecosystem_hub.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/wisrovi_ecosystem_hub",
+    "page": "repos/wisrovi_ecosystem_hub/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "w_libraries",
+    "desc": "Enterprise-grade implementation and architecture for w_libraries.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/w_libraries",
+    "page": "repos/w_libraries/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "train_service_2",
+    "desc": "Enterprise-grade implementation and architecture for train_service_2.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/train_service_2",
+    "page": "repos/train_service_2/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final",
+    "desc": "> **Construcci\u00f3n de Soluciones Reales: Full-Stack Web con FastAPI + Streamlit, Chatbot Inteligente y BD SQL ACID**   > **Nivel:** Nivel 4 (Integrador / Profesional) &bull; **Duraci\u00f3n:** 8 Semanas Formativas   > **Instructor:** **William Rodr\u00edguez (Wisrovi)** (AI Solutions Architect & Principal Softw...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final",
+    "page": "repos/04-proyecto-final/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final_clase-05-integracion-agente-ia",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abConectar el Cerebro del Agente al Sistema Nervioso de la Aplicaci\u00f3n\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-05-integracion-agente-ia",
+    "page": "repos/04-proyecto-final_clase-05-integracion-agente-ia/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "04-proyecto-final_clase-03-persistencia-sql-transacciones",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abLa Base de Datos como una B\u00f3veda Acorazada para la Informaci\u00f3n\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-03-persistencia-sql-transacciones",
+    "page": "repos/04-proyecto-final_clase-03-persistencia-sql-transacciones/index.html",
+    "icon": "fas fa-database"
+  },
+  {
+    "name": "04-proyecto-final_clase-07-docker-y-compose",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abDocker como Contenedores Est\u00e1ndar de Carga Mar\u00edtima para Software\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-07-docker-y-compose",
+    "page": "repos/04-proyecto-final_clase-07-docker-y-compose/index.html",
+    "icon": "fab fa-docker"
+  },
+  {
+    "name": "04-proyecto-final_clase-04-frontend-streamlit",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abStreamlit como el Sal\u00f3n de Control Visual para tu Backend de Python\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-04-frontend-streamlit",
+    "page": "repos/04-proyecto-final_clase-04-frontend-streamlit/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final_clase-08-despliegue-cicd-portafolio",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abLanzamiento a Producci\u00f3n y Presentaci\u00f3n de tu Proyecto ante el Mundo\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-08-despliegue-cicd-portafolio",
+    "page": "repos/04-proyecto-final_clase-08-despliegue-cicd-portafolio/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final_clase-02-backend-fastapi",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abFastAPI como un Centro Log\u00edstico de Alta Velocidad para Peticiones HTTP\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-02-backend-fastapi",
+    "page": "repos/04-proyecto-final_clase-02-backend-fastapi/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final_clase-06-testing-y-calidad",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abLos Tests como el Control de Calidad y Pruebas de Choque de un Veh\u00edculo\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-06-testing-y-calidad",
+    "page": "repos/04-proyecto-final_clase-06-testing-y-calidad/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "04-proyecto-final_clase-01-arquitectura-y-planificacion",
+    "desc": "**Curso 4: Taller Pr\u00e1ctico & Proyecto Final Integrador** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 4 - Integrador` &bull; *Met\u00e1fora Central:* **\u00abDise\u00f1ar los Planos de un Edificio Antes de Poner el Primer Ladrillo\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/04-proyecto-final_clase-01-arquitectura-y-planificacion",
+    "page": "repos/04-proyecto-final_clase-01-arquitectura-y-planificacion/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "03-agentes-ia",
+    "desc": "> **Modelos LLM, Inferencia, Tool Calling, Memoria Vectorial, RAG, Arquitecturas ReAct y Multi-Agentes**   > **Nivel:** Nivel 3 (Avanzado) &bull; **Duraci\u00f3n:** 8 Semanas Formativas   > **Instructor:** **William Rodr\u00edguez (Wisrovi)** (AI Solutions Architect & Principal Software Engineer)",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia",
+    "page": "repos/03-agentes-ia/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-05-embeddings-y-bases-vectoriales",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abEmbeddings como Coordenadas GPS del Significado de las Palabras\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-05-embeddings-y-bases-vectoriales",
+    "page": "repos/03-agentes-ia_clase-05-embeddings-y-bases-vectoriales/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-01-fundamentos-llm-tokenizacion",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abModelos de Lenguaje como Motores de Predicci\u00f3n Probabil\u00edstica\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-01-fundamentos-llm-tokenizacion",
+    "page": "repos/03-agentes-ia_clase-01-fundamentos-llm-tokenizacion/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-02-prompt-engineering-avanzado",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abPrompts como Especificaciones Precisas para un Consultor Experto\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-02-prompt-engineering-avanzado",
+    "page": "repos/03-agentes-ia_clase-02-prompt-engineering-avanzado/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-04-tool-calling-funciones",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abDotando de Manos y Herramientas al Cerebro del LLM\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-04-tool-calling-funciones",
+    "page": "repos/03-agentes-ia_clase-04-tool-calling-funciones/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-06-arquitecturas-rag",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abRAG como Darle al LLM un Libro Abierto con la Informaci\u00f3n Exacta\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-06-arquitecturas-rag",
+    "page": "repos/03-agentes-ia_clase-06-arquitecturas-rag/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-07-agentes-autonomos-react",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abEl Agente como un Detective que Piensa, Act\u00faa y Observa hasta Resolver el Caso\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-07-agentes-autonomos-react",
+    "page": "repos/03-agentes-ia_clase-07-agentes-autonomos-react/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-08-sistemas-multi-agente",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abUna Empresa de Agentes Especializados Coordinados por un Director\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-08-sistemas-multi-agente",
+    "page": "repos/03-agentes-ia_clase-08-sistemas-multi-agente/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "03-agentes-ia_clase-03-salidas-estructuradas-pydantic",
+    "desc": "**Curso 3: Creaci\u00f3n y Desarrollo de Agentes de IA** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 3 - Avanzado` &bull; *Met\u00e1fora Central:* **\u00abPydantic como la Aduana Estricta de Datos para Respuestas de IA\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/03-agentes-ia_clase-03-salidas-estructuradas-pydantic",
+    "page": "repos/03-agentes-ia_clase-03-salidas-estructuradas-pydantic/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "02-algoritmos-estructuras",
+    "desc": "> **Optimizaci\u00f3n de Memoria, Notaci\u00f3n Big-O, Pilas, Colas, B\u00fasqueda Binaria, Grafos y Programaci\u00f3n Din\u00e1mica**   > **Nivel:** Nivel 2 (Intermedio) &bull; **Duraci\u00f3n:** 8 Semanas Formativas   > **Instructor:** **William Rodr\u00edguez (Wisrovi)** (AI Solutions Architect & Principal Software Engineer)",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras",
+    "page": "repos/02-algoritmos-estructuras/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abProgramaci\u00f3n Din\u00e1mica como Recordar el Pasado para no Resolverlo Dos Veces\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica",
+    "page": "repos/02-algoritmos-estructuras_clase-08-recursividad-y-programacion-dinamica/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-04-algoritmos-busqueda",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abB\u00fasqueda Binaria como Buscar una Palabra en el Diccionario Dividiendo a la Mitad\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-04-algoritmos-busqueda",
+    "page": "repos/02-algoritmos-estructuras_clase-04-algoritmos-busqueda/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-07-grafos-y-recorridos",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abGrafos como Redes de Ciudades y Rutas de Vuelo\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-07-grafos-y-recorridos",
+    "page": "repos/02-algoritmos-estructuras_clase-07-grafos-y-recorridos/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abOrdenar Barajas de Cartas con Divide y Vencer\u00e1s\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento",
+    "page": "repos/02-algoritmos-estructuras_clase-05-algoritmos-ordenamiento/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abMedir el Rendimiento de un Algoritmo a Medida que Crece la Entrada\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o",
+    "page": "repos/02-algoritmos-estructuras_clase-01-analisis-complejidad-big-o/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-03-tablas-hash-y-sets",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abTablas Hash como un Fichero con \u00cdndice Alfab\u00e9tico Instant\u00e1neo\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-03-tablas-hash-y-sets",
+    "page": "repos/02-algoritmos-estructuras_clase-03-tablas-hash-y-sets/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00ab\u00c1rboles como Organigramas Jer\u00e1rquicos con Ramas Izquierda y Derecha\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda",
+    "page": "repos/02-algoritmos-estructuras_clase-06-arboles-binarios-busqueda/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "02-algoritmos-estructuras_clase-02-pilas-y-colas",
+    "desc": "**Curso 2: Algoritmos Avanzados y Estructuras de Datos** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 2 - Intermedio` &bull; *Met\u00e1fora Central:* **\u00abPilas LIFO como Platos Apilados y Colas FIFO como la Fila del Supermercado\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/02-algoritmos-estructuras_clase-02-pilas-y-colas",
+    "page": "repos/02-algoritmos-estructuras_clase-02-pilas-y-colas/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python",
+    "desc": "> **De Cero a Programador: Los 4 Pilares L\u00f3gicos, Colecciones y Proyecto CLI**   > **Nivel:** Nivel 1 (100% Principiantes Absolutos) &bull; **Duraci\u00f3n:** 8 Semanas Formativas   > **Instructor:** **William Rodr\u00edguez (Wisrovi)** (AI Solutions Architect & Principal Software Engineer)",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python",
+    "page": "repos/01-fundamentos-python/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-04-control-flujo-bucles",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 04**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abBucles como una Cinta Transportadora de F\u00e1brica\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-04-control-flujo-bucles",
+    "page": "repos/01-fundamentos-python_clase-04-control-flujo-bucles/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-05-listas-y-colecciones",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 05**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abListas como Archivadores Modulares y Tuplas como Documentos Notariados\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-05-listas-y-colecciones",
+    "page": "repos/01-fundamentos-python_clase-05-listas-y-colecciones/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-03-control-flujo-condicionales",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 03**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abCondicionales como Sem\u00e1foros y Bifurcaciones en un Tren\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-03-control-flujo-condicionales",
+    "page": "repos/01-fundamentos-python_clase-03-control-flujo-condicionales/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-01-panorama-general",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 01**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abEl Meg\u00e1fono (print), Las Cajas (variables), El Sem\u00e1foro (if) y La Cinta Transportadora (for)\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-01-panorama-general",
+    "page": "repos/01-fundamentos-python_clase-01-panorama-general/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-07-funciones",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 07**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abFunciones como M\u00e1quinas Reutilizables de una F\u00e1brica\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-07-funciones",
+    "page": "repos/01-fundamentos-python_clase-07-funciones/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-08-proyecto-integrador-basico",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 08**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abConstruyendo tu Primera Aplicaci\u00f3n Real de Consola\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-08-proyecto-integrador-basico",
+    "page": "repos/01-fundamentos-python_clase-08-proyecto-integrador-basico/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-06-diccionarios",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 06**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abDiccionarios como un Casillero con Llaves \u00danicas\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-06-diccionarios",
+    "page": "repos/01-fundamentos-python_clase-06-diccionarios/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "01-fundamentos-python_clase-02-variables-y-tipos",
+    "desc": "**Curso 1: Fundamentos B\u00e1sicos de Python** &bull; **Semana CLASE 02**   *Nivel:* `Nivel 1 - Principiante` &bull; *Met\u00e1fora Central:* **\u00abVariables como Cajas Etiquetadas en Memoria y la Licuadora Tipada (PEP 484)\u00bb**",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/01-fundamentos-python_clase-02-variables-y-tipos",
+    "page": "repos/01-fundamentos-python_clase-02-variables-y-tipos/index.html",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "ui-ux-pro-max-skill",
+    "desc": "<p align=\"center\">   <a href=\"https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.vi.md\">\ud83c\uddfb\ud83c\uddf3 Ti\u1ebfng Vi\u1ec7t</a> |   <a href=\"https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/README.zh.md\">\ud83c\udde8\ud83c\uddf3 \u7b80\u4f53\u4e2d\u6587</a> |   <a href=\"https://github.com/nextlevelbuilder/ui-ux-pro-max-skil...",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/ui-ux-pro-max-skill",
+    "page": "repos/ui-ux-pro-max-skill/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "archify",
+    "desc": "<p align=\"center\">   <strong>English</strong> \u00b7 <a href=\"./README_ZH.md\">\u7b80\u4f53\u4e2d\u6587</a> </p>",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/archify",
+    "page": "repos/archify/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "superpowers",
+    "desc": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/superpowers",
+    "page": "repos/superpowers/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "impeccable",
+    "desc": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 59 deterministic detector rules for AI-generated frontend design.",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/impeccable",
+    "page": "repos/impeccable/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "andrej-karpathy-skills",
+    "desc": "> Check out my new project Multica \u2014 an open-source platform for running and managing coding agents with reusable skills. > > Follow me on X: https://x.com/jiayuan_jy",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/andrej-karpathy-skills",
+    "page": "repos/andrej-karpathy-skills/index.html",
+    "icon": "fas fa-code-branch"
+  },
+  {
+    "name": "graphify",
+    "desc": "<p align=\"center\">   <a href=\"https://graphify.com\"><img src=\"https://raw.githubusercontent.com/Graphify-Labs/graphify/v8/docs/logo.png\" width=\"300\" height=\"140\" alt=\"Graphify\"/></a> </p>",
+    "stars": 1,
+    "lang": "Python",
+    "url": "https://github.com/wisrovi/graphify",
+    "page": "repos/graphify/index.html",
+    "icon": "fas fa-code-branch"
+  }
+]
