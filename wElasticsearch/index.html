@@ -6,14 +6,14 @@
     <title>wElasticsearch | Enterprise Architecture & Tooling</title>
     
     <!-- SEO & Metadata -->
-    <meta name="description" content="Official repository for wElasticsearch by William Steve Rodriguez Villamizar (wisrovi).">
+    <meta name="description" content="<p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...">
     <meta name="keywords" content="wElasticsearch, python, engineering, data, ai, mlops, wisrovi">
     <meta name="author" content="William Steve Rodriguez Villamizar (wisrovi)">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
     <meta property="og:title" content="wElasticsearch - wElasticsearch">
-    <meta property="og:description" content="Official repository for wElasticsearch by William Steve Rodriguez Villamizar (wisrovi).">
+    <meta property="og:description" content="<p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://github.com/wisrovi/wElasticsearch">
     <meta property="og:site_name" content="Wisrovi Ecosystem">
@@ -374,7 +374,7 @@
                 <i class="fas fa-check-circle"></i> Industrial Grade — LTS Support
             </div>
             <h1>The Architecture of <span class="gradient-text">wElasticsearch</span></h1>
-            <p>Official repository for wElasticsearch by William Steve Rodriguez Villamizar (wisrovi).</p>
+            <p><p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...</p>
             <div class="hero-btns">
                 <a href="https://github.com/wisrovi/wElasticsearch" target="_blank" class="btn btn-main">
                     <i class="fab fa-github"></i> Explore on GitHub
@@ -419,23 +419,23 @@
                 
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Industrial Reliability</h3>
-                <p>Engineered for robust performance and high availability.</p>
+                <h3>Python</h3>
+                <p>3.9+</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Clean Architecture</h3>
-                <p>Structured code with modular boundaries and strict standards.</p>
+                <h3>Key Libraries</h3>
+                <p>elasticsearch>=8.0.0, pydantic>=2.0.0</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Ecosystem Synergy</h3>
-                <p>Integrated with the Wisrovi Distributed AI & Engineering Suite.</p>
+                <h3>Testing</h3>
+                <p>pytest, pytest-cov, pytest-asyncio</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Reproducible Builds</h3>
-                <p>Full dependency pinning, automated CI, and open-source licensing.</p>
+                <h3>Code Quality</h3>
+                <p>black, mypy, ruff</p>
             </div>
             </div>
         </div>
@@ -462,11 +462,23 @@
                         <div class="dot dot-green"></div>
                         <span style="color: var(--text-dim); font-size: 0.75rem; margin-left: 0.5rem;">quickstart.py</span>
                     </div>
-                    <pre><code># wElasticsearch
-# Built by wisrovi
+                    <pre><code>from pydantic import BaseModel
+from wElasticsearch import WElasticsearch
 
-print('Loaded wElasticsearch')
-</code></pre>
+ES_CONFIG = {
+    "hosts": ["http://localhost:9200"],
+}
+
+class User(BaseModel):
+    id: int
+    name: str
+    email: str
+
+client = WElasticsearch(**ES_CONFIG)
+client.insert("users", {"id": 1, "name": "John", "email": "john@example.com"}, id="1")
+results = client.search("users", {"query": {"match_all": {}}})
+print(results)
+client.close()</code></pre>
                 </div>
             </div>
         </div>

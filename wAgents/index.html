@@ -6,14 +6,14 @@
     <title>wAgents | Enterprise Architecture & Tooling</title>
     
     <!-- SEO & Metadata -->
-    <meta name="description" content="Official repository for wAgents by William Steve Rodriguez Villamizar (wisrovi).">
+    <meta name="description" content="<p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...">
     <meta name="keywords" content="wAgents, python, engineering, data, ai, mlops, wisrovi">
     <meta name="author" content="William Steve Rodriguez Villamizar (wisrovi)">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="wAgents - wAgents">
-    <meta property="og:description" content="Official repository for wAgents by William Steve Rodriguez Villamizar (wisrovi).">
+    <meta property="og:title" content="wAgents - wAgents - AI Agent Development Environment">
+    <meta property="og:description" content="<p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://github.com/wisrovi/wAgents">
     <meta property="og:site_name" content="Wisrovi Ecosystem">
@@ -374,13 +374,13 @@
                 <i class="fas fa-check-circle"></i> Industrial Grade — LTS Support
             </div>
             <h1>The Architecture of <span class="gradient-text">wAgents</span></h1>
-            <p>Official repository for wAgents by William Steve Rodriguez Villamizar (wisrovi).</p>
+            <p><p align="center">   <a href="https://linkedin.com/in/wisrovi-rodriguez"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>   <a href="https://wisrovi.dev"><img src="https://img.shields.io/badge/Author-wisrovi.dev-111827?st...</p>
             <div class="hero-btns">
                 <a href="https://github.com/wisrovi/wAgents" target="_blank" class="btn btn-main">
                     <i class="fab fa-github"></i> Explore on GitHub
                 </a>
                 <a href="https://github.com/wisrovi/wAgents" target="_blank" class="btn btn-outline">
-                    <i class="fas fa-terminal"></i> pip install wAgents
+                    <i class="fas fa-terminal"></i> pip install -r
                 </a>
             </div>
         </div>
@@ -419,23 +419,33 @@
                 
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Industrial Reliability</h3>
-                <p>Engineered for robust performance and high availability.</p>
+                <h3>🎯 GPU Acceleration</h3>
+                <p>Full NVIDIA CUDA 12.0 support for ML/AI workloads</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Clean Architecture</h3>
-                <p>Structured code with modular boundaries and strict standards.</p>
+                <h3>🔒 Security-First</h3>
+                <p>Integrated vulnerability scanning (Bandit, Safety) and security analysis tools</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Ecosystem Synergy</h3>
-                <p>Integrated with the Wisrovi Distributed AI & Engineering Suite.</p>
+                <h3>✨ Code Quality</h3>
+                <p>Automated linting, formatting, and pre-commit hooks with Ruff</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
-                <h3>Reproducible Builds</h3>
-                <p>Full dependency pinning, automated CI, and open-source licensing.</p>
+                <h3>📊 Data Management</h3>
+                <p>DVC (Data Version Control) with S3 integration</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
+                <h3>🛠️ Development Tools</h3>
+                <p>Rich terminal experience with Zsh, Oh My Zsh, and 20+ productivity tools</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-code-branch"></i></div>
+                <h3>🐳 Container Ready</h3>
+                <p>Optimized Docker setup with GPU passthrough and Docker-in-Docker</p>
             </div>
             </div>
         </div>
@@ -449,7 +459,7 @@
                     <h2>Declarative & <span class="gradient-text">Streamlined</span></h2>
                     <p>Designed to eliminate low-level plumbing and cognitive friction, allowing engineers to build reliable solutions in minutes.</p>
                     <div style="background: rgba(255,255,255,0.03); padding: 1.25rem; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 1.5rem;">
-                        <span style="color: var(--primary); font-family: 'JetBrains Mono', monospace; font-size: 0.95rem;">$ pip install wAgents</span>
+                        <span style="color: var(--primary); font-family: 'JetBrains Mono', monospace; font-size: 0.95rem;">$ pip install -r</span>
                     </div>
                     <a href="https://github.com/wisrovi/wAgents" target="_blank" class="btn btn-main">
                         <i class="fas fa-book-open"></i> View Documentation
@@ -462,11 +472,30 @@
                         <div class="dot dot-green"></div>
                         <span style="color: var(--text-dim); font-size: 0.75rem; margin-left: 0.5rem;">quickstart.py</span>
                     </div>
-                    <pre><code># wAgents
-# Built by wisrovi
+                    <pre><code># Code with vulnerabilities for new tool to detect
+   ```
 
-print('Loaded wAgents')
-</code></pre>
+### Adding New Quality Tools
+
+1. **Add to requirements/base.txt**
+   ```txt
+   new-quality-tool==1.0.0
+   ```
+
+2. **Create script in scripts/executor/quality/**
+   ```bash
+   #!/bin/bash
+   new-quality-tool check --fix .
+   ```
+
+3. **Add example in python/examples/quality/**
+   ```python
+   # Code with quality issues for new tool to detect
+   ```
+
+### Custom Aliases
+
+Add to `Dockerfile` in the ZSH configuration section:</code></pre>
                 </div>
             </div>
         </div>
